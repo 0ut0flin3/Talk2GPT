@@ -5,7 +5,7 @@ A Python script to use OpenAI's text-davinci-003 model using your own voice inst
 -This script doesn't work on Windows, only work on Linux Ubuntu (tested on Ubuntu 22.10)
 
 -In order to use this script you need to install these Python modules: `openai`,`SpeechRecognition`,`gTTS`,`PyAudio`
-If you have some mistakes in installing PyAudio read this topic: [https://stackoverflow.com/questions/20023131/cannot-install-pyaudio-gcc-error](https://stackoverflow.com/questions/20023131/cannot-install-pyaudio-gcc-error)
+**If you have some mistakes in installing PyAudio read this topic: [https://stackoverflow.com/questions/20023131/cannot-install-pyaudio-gcc-error](https://stackoverflow.com/questions/20023131/cannot-install-pyaudio-gcc-error)**
 
 -You need to have your OpenAI's Api key inside the OPENAI_API_KEY environment variable
 
@@ -18,6 +18,8 @@ So, first of all, install required modules:
 `pip install gTTS`
 
 `pip install PyAudio`
+
+**If you have some mistakes in installing PyAudio read this topic: [https://stackoverflow.com/questions/20023131/cannot-install-pyaudio-gcc-error](https://stackoverflow.com/questions/20023131/cannot-install-pyaudio-gcc-error)**
 
 You should now be able to use the app but **FIRST** take a look at the 2 JSON files that come with the script: `speech_language.json` and `memories.json`
 
