@@ -1,5 +1,5 @@
 # openai-davinci003-python-speech
-A Python script to use OpenAI's text-davinci-003 model using your own voice instead of text, in any language
+A Python script to use OpenAI's text-davinci-003 model using your own voice instead of text.
 
 ## REQUIRMENTS and HOW TO USE (READ PLEASE!)
 -This script doesn't work on Windows, only work on Linux Ubuntu (tested on Ubuntu 22.10)
@@ -26,7 +26,7 @@ You should now be able to use the app but **FIRST** take a look at the 2 JSON fi
 ###`speech_language.json` : 
 contains the language that you want use to speak. You can change it, you can use any language.below the tickers for the languages
 
-` 
+```
 ar-SA Arabic Saudi Arabia
 cs-CZ Czech Czech Republic
 da-DK Danish Denmark
@@ -64,7 +64,7 @@ tr-TR Turkish Turkey
 zh-CN Chinese China
 zh-HK Chinese Hong Kong
 zh-TW Chinese Taiwan
-
+```
 
 ###`memories.json` : 
 Initially it is empty, every question and answer given with the AI is added to the file and every time the speeches are added to the prompt automatically
