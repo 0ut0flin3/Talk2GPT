@@ -12,8 +12,11 @@ If you have some mistakes in installing PyAudio read this topic: [https://stacko
 So, first of all, install required modules:
 
 `pip install openai`
+
 `pip install SpeechRecognition`
-`pip instal gTTS`
+
+`pip install gTTS`
+
 `pip install PyAudio`
 
 You should now be able to use the app but **FIRST** take a look at the 2 JSON files that come with the script: `speech_language.json` and `memories.json`
