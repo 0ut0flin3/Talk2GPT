@@ -70,3 +70,7 @@ zh-TW Chinese Taiwan
 Initially it is empty, every question and answer given with the AI is added to the file and every time the speeches are added to the prompt automatically
 so it will remember what you said.
 **IF YOU WANT TO RESET THE MEMORY JUST OVERWRITE ALL THE CONTENT OF THE FILE WITH `{}` (so it must not be completely empty but contain `{}` otherwise it will cause an error)**
+
+
+## START THE APP
+Start the app with `python3 app.py 2>/dev/null`
