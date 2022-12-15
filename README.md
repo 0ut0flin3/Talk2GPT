@@ -1,6 +1,8 @@
 # openai-davinci003-python-speech
 A Python script to use OpenAI's text-davinci-003 model using your own voice instead of text.
+
 [requirments-and-how-to-use (PLEASE READ FIRST!)](https://github.com/0ut0flin3/openai-davinci003-python-speech/blob/main/README.md#requirments-and-how-to-use-read-please)
+
 [Start the app](https://github.com/0ut0flin3/openai-davinci003-python-speech/blob/main/README.md#start-the-app)
 
 
