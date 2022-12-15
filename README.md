@@ -1,5 +1,8 @@
 # openai-davinci003-python-speech
 A Python script to use OpenAI's text-davinci-003 model using your own voice instead of text.
+[requirments-and-how-to-use (PLEASE READ FIRST!)](https://github.com/0ut0flin3/openai-davinci003-python-speech/blob/main/README.md#requirments-and-how-to-use-read-please)
+[Start the app](https://github.com/0ut0flin3/openai-davinci003-python-speech/blob/main/README.md#start-the-app)
+
 
 ## REQUIRMENTS and HOW TO USE (READ PLEASE!)
 -This script doesn't work on Windows, only work on Linux Ubuntu (tested on Ubuntu 22.10)
@@ -73,4 +76,4 @@ so it will remember what you said.
 
 
 ## START THE APP
-Start the app with `python3 app.py 2>/dev/null`
+Start the app with `python3 app.py 2>/dev/null` and say something...the AI will reply! **If you say nothing, app could crash! SORRY FOR THAT, WILL FIX**
