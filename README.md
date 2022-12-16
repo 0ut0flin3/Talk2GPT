@@ -23,7 +23,7 @@ A Python script to use OpenAI's text-davinci-003 model using your own voice inst
 So, first of all, install all required packages\modules:
 
 `sudo apt install mpg321 python3-dev portaudio19-dev`
- `
+ 
 `pip install openai`
 
 `pip install SpeechRecognition`
