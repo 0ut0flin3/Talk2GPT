@@ -1,5 +1,6 @@
 # openai-davinci003-python-speech
 A Python script to use OpenAI's text-davinci-003 model using your own voice instead of text.
+**--Not tested on Windows, tested on Linux Ubuntu 22.10. Could not work on Windows--**
 
 [REQUIRMENTS & HOW-TO-USE (PLEASE READ FIRST!)](https://github.com/0ut0flin3/openai-davinci003-python-speech/blob/main/README.md#requirments-and-how-to-use-read-please)
 
@@ -7,7 +8,7 @@ A Python script to use OpenAI's text-davinci-003 model using your own voice inst
 
 
 ## REQUIRMENTS and HOW TO USE (READ PLEASE!)
--This script doesn't work on Windows, only work on Linux Ubuntu (tested on Ubuntu 22.10)
+
 
 -In order to use this script you need to :
 
@@ -16,7 +17,7 @@ A Python script to use OpenAI's text-davinci-003 model using your own voice inst
 -install these Python modules: `openai`,`SpeechRecognition`,`gTTS`,`PyAudio`
 
 
--install **MPG321** (a mp3 player for linux) 
+-install `mpg321` (a mp3 player for linux) 
 
 
 
