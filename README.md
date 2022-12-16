@@ -9,17 +9,21 @@ A Python script to use OpenAI's text-davinci-003 model using your own voice inst
 ## REQUIRMENTS and HOW TO USE (READ PLEASE!)
 -This script doesn't work on Windows, only work on Linux Ubuntu (tested on Ubuntu 22.10)
 
--In order to use this script you need to:
+-In order to use this script you need to :
 
-install these Python modules: `openai`,`SpeechRecognition`,`gTTS`,`PyAudio`
-**If you have some mistakes in installing PyAudio read this topic: [https://stackoverflow.com/questions/20023131/cannot-install-pyaudio-gcc-error](https://stackoverflow.com/questions/20023131/cannot-install-pyaudio-gcc-error)**
+-have your OpenAI's Api key inside the OPENAI_API_KEY environment variable
 
--YOU NEED TO INSTALL **MPG321 MP3 PLAYER** WITH `apt install mpg321`
+-install these Python modules: `openai`,`SpeechRecognition`,`gTTS`,`PyAudio`
 
--You need to have your OpenAI's Api key inside the OPENAI_API_KEY environment variable
 
-So, first of all, install required modules:
+-install **MPG321** (a mp3 player for linux) 
 
+
+
+So, first of all, install all required packages\modules:
+
+`sudo apt install mpg321 python3-dev portaudio19-dev`
+ `
 `pip install openai`
 
 `pip install SpeechRecognition`
@@ -30,9 +34,9 @@ So, first of all, install required modules:
 
 **If you have some mistakes in installing PyAudio read this topic: [https://stackoverflow.com/questions/20023131/cannot-install-pyaudio-gcc-error](https://stackoverflow.com/questions/20023131/cannot-install-pyaudio-gcc-error)**
 
-You should now be able to use the app but **FIRST** take a look at the 2 JSON files that come with the script: `speech_language.json` and `memories.json`
+You should now be able to use the app with `python3 app.py 2>/dev/null` but **FIRST** take a look at the 2 JSON files that come with the script: `speech_language.json` and `memories.json`
 
-###`speech_language.json` : 
+### speech_language.json : 
 contains the language that you want use to speak. You can change it, you can use any language.below the tickers for the languages
 
 ```
@@ -75,7 +79,7 @@ zh-HK Chinese Hong Kong
 zh-TW Chinese Taiwan
 ```
 
-###`memories.json` : 
+### memories.json : 
 Initially it is empty, every question and answer given with the AI is added to the file and every time the speeches are added to the prompt automatically
 so it will remember what you said.
 **IF YOU WANT TO RESET THE MEMORY JUST OVERWRITE ALL THE CONTENT OF THE FILE WITH `{}` (so it must not be completely empty but contain `{}` otherwise it will cause an error)**
