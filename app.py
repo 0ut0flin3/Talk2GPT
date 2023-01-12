@@ -81,7 +81,7 @@ def main():
         print("AI Memories loaded\n\n")
     except:
            print("Can't load AI's memories from memories.json file. Be sure that the file is not fully empty. It must have at least two brackets {}")
-    f.close()
+    #f.close()
 
     while True:
 
