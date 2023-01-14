@@ -4,6 +4,8 @@ import openai
 import json
 import os
 import time
+if os.name=='nt':
+   import playsound
 
 
 
@@ -24,11 +26,12 @@ import time
 #### READ!! First of all, kill all other existent python3 processes because cause mistakes with speech_recognition module (just for me,if you're not affected you can remove this part of code)
 import subprocess
 import os
-pyproc=subprocess.check_output(['pidof', 'python3']).decode()
-pyproc=pyproc.replace("\n","")
-pyproc=pyproc.split()[1:]
-for proc in pyproc:
-    os.system("kill -9 "+proc)
+if os.name=="posix":
+	pyproc=subprocess.check_output(['pidof', 'python3']).decode()
+	pyproc=pyproc.replace("\n","")
+	pyproc=pyproc.split()[1:]
+	for proc in pyproc:
+	    os.system("kill -9 "+proc)
 ################################################
 
 
@@ -81,7 +84,7 @@ def main():
         print("AI Memories loaded\n\n")
     except:
            print("Can't load AI's memories from memories.json file. Be sure that the file is not fully empty. It must have at least two brackets {}")
-    #f.close()
+    f.close()
 
     while True:
 
@@ -92,12 +95,12 @@ def main():
                 t1=time.time()
                 if isinstance(q,str):
                     response = openai.Completion.create(
-                      model="text-davinci-003",
+                      model="text-davinci-002",
                       
                       
                       prompt=pr+"Human: "+q+"\nAI:\n",
                       temperature=1,
-                      max_tokens=150,
+                      max_tokens=3000,
                       top_p=1,
                       
                       frequency_penalty=0.0,
@@ -116,7 +119,11 @@ def main():
                 print("\n\n["+str(t2-t1)[:4]+" seconds]\n\n")
                 myobj = gTTS(text=response.choices[0].text, lang=LANGUAGE_GTTS_FORMAT, slow=False)
                 myobj.save("answer.mp3")
-                os.system("mpg321 answer.mp3")
+                if os.name=="posix":
+                   os.system("mpg321 answer.mp3")
+                if os.name=="nt":
+                   p = playsound.playsound("answer.mp3")
+                   
                 
                 print('\n')
                 
