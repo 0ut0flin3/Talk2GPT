@@ -112,4 +112,6 @@ so it will remember what you said.
 
 
 ## START THE APP
-Start the app with `python3 app.py 2>/dev/null` and say something...the AI will reply! **If you say nothing, app could crash! SORRY FOR THAT, WILL FIX**
+Start the app with `python3 app.py 2>/dev/null` on Linux
+or `python app.py` on Windows
+and say something...the AI will reply (with voice too)! 
