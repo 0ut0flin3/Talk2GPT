@@ -55,7 +55,7 @@ try:
     global LANGUAGE_GTTS_FORMAT
     LANGUAGE_SR_FORMAT=jsonf["language"][0]
     LANGUAGE_GTTS_FORMAT=jsonf["language"][0][:2]
-    print(LANGUAGE_GTTS_FORMAT)
+    
 except:
        print("Can't find\open speech_language.json file")
 #################################################
@@ -63,8 +63,10 @@ except:
 
 def main():
 
-    
-    os.system('clear')
+    if os.name=="posix":
+       os.system('clear')
+    if os.name=="nt":
+       os.system('cls')
     openai.api_key = os.getenv("OPENAI_API_KEY") 
     
     global memories
