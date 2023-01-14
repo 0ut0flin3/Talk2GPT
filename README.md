@@ -1,6 +1,6 @@
 # openai-davinci003-python-speech
 A Python script to use OpenAI's text-davinci-003 model using your own voice instead of text.
-**--UPDATE: Windows now works--**
+**--UPDATE: now it works on windows too--**
 
 [REQUIRMENTS & HOW-TO-USE (PLEASE READ FIRST!)](https://github.com/0ut0flin3/openai-davinci003-python-speech/blob/main/README.md#requirments-and-how-to-use-read-please)
 
@@ -53,10 +53,12 @@ So, first of all, install all required packages\modules:
 
 `pip install playsound`
 
-
-
+\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 **If you have some mistakes in installing PyAudio read this topic: [https://stackoverflow.com/questions/20023131/cannot-install-pyaudio-gcc-error](https://stackoverflow.com/questions/20023131/cannot-install-pyaudio-gcc-error)**
+
+
 
 You should now be able to use the app with `python3 app.py 2>/dev/null` but **FIRST** take a look at the 2 JSON files that come with the script: `speech_language.json` and `memories.json`
 
