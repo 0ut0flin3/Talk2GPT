@@ -101,7 +101,7 @@ def main():
                     pr=pr+"Human: "+m+"\nAI:"+memories[m]+"\n"
         print("-------------------------")
         print("GPTalk by 0ut0flin3")
-        print(bcolors.OKGREEN+"If you found this software useful please consider a donation: https://github.com/0ut0flin3/VoiceGPT#donate"+bcolors.ENDC)
+        print(bcolors.OKGREEN+"If you found this software useful please consider a donation: https://github.com/0ut0flin3/GPTalk#donate"+bcolors.ENDC)
         print("-------------------------")
         print("AI Memories loaded\n\n")
     except:
