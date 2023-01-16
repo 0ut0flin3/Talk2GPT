@@ -134,15 +134,17 @@ and say something...the AI will reply (with voice too)!
 If you found this software useful please consider a donation:
 
 
-Bitcoin: 17AnP1zuvLV9cQrGQi6H6qMLeWeujHzAYX
+Bitcoin:  `17AnP1zuvLV9cQrGQi6H6qMLeWeujHzAYX`
 
-Monero: 82qjYLZj6XeTGjeUNm9AQVB78hVGStZd8YU1UKuvWz8QKAzFWZpBpEQFho3jrvUCNQPSqC9nYeEN3b7FQ5REPffNSA2WSDH
+Monero: `82qjYLZj6XeTGjeUNm9AQVB78hVGStZd8YU1UKuvWz8QKAzFWZpBpEQFho3jrvUCNQPSqC9nYeEN3b7FQ5REPffNSA2WSDH`
 
-Solana: 6RX2ADdcNWZfaUfuGeHg86AYAoMuLF45Lbgfu3oNGh9i
+Solana: `6RX2ADdcNWZfaUfuGeHg86AYAoMuLF45Lbgfu3oNGh9i`
 
-Litecoin: ltc1q4ft4ltjnyt8auqq4m5u7raatftu6mt5snst493
+Litecoin: `ltc1q4ft4ltjnyt8auqq4m5u7raatftu6mt5snst493`
 
-Ethereum: 0xF3A0246690947669A0bf68147Ba82AC8de576a56
+Ethereum: `0xF3A0246690947669A0bf68147Ba82AC8de576a56`
+
+Polygon / MYST : 0x45320b5B2a8f6073f4a92FFDF149861aBade4B4b
 
 
 
