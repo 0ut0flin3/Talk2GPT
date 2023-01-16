@@ -16,6 +16,7 @@ if os.name=='nt':
    import playsound
 
 
+EXIT=['exit','quit','goodbye','exit now','go to sleep']
 
 
 # WRITTEN BY 0UT0FLIN3 (github.com/0ut0flin3)#### 0UT0FLIN3@PROTONMAIL.COM ####
@@ -139,6 +140,8 @@ def main():
                         
                         
                         print('\n')
+                        if q in EXIT:
+                           break
                         
                 
 
