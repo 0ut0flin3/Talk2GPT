@@ -16,7 +16,18 @@ if os.name=='nt':
    import playsound
 
 
-EXIT=['exit','quit','goodbye','exit now','go to sleep']
+global EXIT;EXIT=['exit','quit','goodbye','exit now','go to sleep']
+
+class bcolors:
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKCYAN = '\033[96m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
 
 
 # WRITTEN BY 0UT0FLIN3 (github.com/0ut0flin3)#### 0UT0FLIN3@PROTONMAIL.COM ####
@@ -90,7 +101,7 @@ def main():
                     pr=pr+"Human: "+m+"\nAI:"+memories[m]+"\n"
         print("-------------------------")
         print("VoiceGPT by 0ut0flin3")
-	print("If you found this software useful please consider a donation: https://github.com/0ut0flin3/VoiceGPT#donate")
+        print(bcolors.OKGREEN+"If you found this software useful please consider a donation: https://github.com/0ut0flin3/VoiceGPT#donate"+bcolors.ENDC)
         print("-------------------------")
         print("AI Memories loaded\n\n")
     except:
@@ -104,7 +115,7 @@ def main():
                 if q==None:
                    continue
                 else:
-                        print("Human: "+q)
+                        print(bcolors.OKCYAN+"Human: "+bcolors.ENDC+q)
                         print('\n')
                         t1=time.time()
                         if isinstance(q,str):
@@ -130,7 +141,7 @@ def main():
                         ff=open("memories.json","w")
                         j=json.dump(memories,ff)
                         ff.close()
-                        print("AI: "+response.choices[0].text)
+                        print(bcolors.HEADER+"AI: "+bcolors.ENDC+response.choices[0].text)
                         print("\n\n["+str(t2-t1)[:4]+" seconds]\n\n")
                         myobj = gTTS(text=response.choices[0].text, lang=LANGUAGE_GTTS_FORMAT, slow=False)
                         myobj.save("answer.mp3")
@@ -139,7 +150,8 @@ def main():
                         if os.name=="nt":
                            p = playsound.playsound("answer.mp3")
                         
-                        
+                        print("If you found this software useful please consider a donation: https://github.com/0ut0flin3/VoiceGPT#donate")
+
                         print('\n')
                         if q in EXIT:
                            break
