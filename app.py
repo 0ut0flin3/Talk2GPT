@@ -100,7 +100,7 @@ def main():
         for m in memories:
                     pr=pr+"Human: "+m+"\nAI:"+memories[m]+"\n"
         print("-------------------------")
-        print("VoiceGPT by 0ut0flin3")
+        print("GPTalk by 0ut0flin3")
         print(bcolors.OKGREEN+"If you found this software useful please consider a donation: https://github.com/0ut0flin3/VoiceGPT#donate"+bcolors.ENDC)
         print("-------------------------")
         print("AI Memories loaded\n\n")
