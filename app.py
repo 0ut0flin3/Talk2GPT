@@ -150,7 +150,7 @@ def main():
                         if os.name=="nt":
                            p = playsound.playsound("answer.mp3")
                         
-                        print("If you found this software useful please consider a donation: https://github.com/0ut0flin3/VoiceGPT#donate")
+                        print(bcolors.OKGREEN+"If you found this software useful please consider a donation: https://github.com/0ut0flin3/GPTalk#donate"+bcolors.ENDC)
 
                         print('\n')
                         if q in EXIT:
