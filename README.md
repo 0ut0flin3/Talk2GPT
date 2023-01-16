@@ -1,4 +1,7 @@
+**[JOIN DISCORD ![JOIN DISCORD](https://user-images.githubusercontent.com/114559605/212726176-c12535dc-07af-4884-8d91-9d36d225d2f9.png)
+](https://discord.gg/mettNtATzW)**
 # VoiceGPT
+
 A way to use OpenAI's GPT using your own voice instead of text.
 
 **--UPDATES:** 
