@@ -1,9 +1,11 @@
 # openai-davinci003-python-speech
 A Python script to use OpenAI's text-davinci-003 model using your own voice instead of text.
+
 **--UPDATES:** 
 
-**now it could work on windows too (but not personally tested yet)**
-**Say "goodbye" or "go to sleep" to quit**
+**--Now it could work on windows too (but not personally tested yet)--**
+
+**--Say "goodbye" or "go to sleep" to quit--**
 
 
 [REQUIRMENTS & HOW-TO-USE (PLEASE READ FIRST!)](https://github.com/0ut0flin3/openai-davinci003-python-speech/blob/main/README.md#requirments-and-how-to-use-read-please)
