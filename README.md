@@ -7,7 +7,8 @@ A Python script to use OpenAI's text-davinci-003 model using your own voice inst
 
 **--Say "goodbye" or "go to sleep" to quit--**
 
-**Lots of other exciting features will be added! please consider [DONATE](https://github.com/0ut0flin3/openai-davinci003-python-speech/edit/main/README.md#donate) if you found this app useful or if you will use it for profitable projects, THANK YOU <3 **
+**Lots of other exciting features will be added!**
+**please consider [DONATE](https://github.com/0ut0flin3/openai-davinci003-python-speech/edit/main/README.md#donate) if you found this app useful or if you will use it for profitable projects, THANK YOU <3**
 **For anything do not hesitate to write me 0ut0flin3@protonmail.com**
 
 
