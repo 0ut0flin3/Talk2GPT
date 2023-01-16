@@ -1,4 +1,4 @@
-# openai-davinci003-python-speech
+# VoiceGPT
 A Python script to use OpenAI's text-davinci-003 model using your own voice instead of text.
 
 **--UPDATES:** 
