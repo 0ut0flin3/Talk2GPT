@@ -144,7 +144,7 @@ Litecoin: `ltc1q4ft4ltjnyt8auqq4m5u7raatftu6mt5snst493`
 
 Ethereum: `0xF3A0246690947669A0bf68147Ba82AC8de576a56`
 
-Polygon / MYST : 0x45320b5B2a8f6073f4a92FFDF149861aBade4B4b
+Polygon / MYST : `0x45320b5B2a8f6073f4a92FFDF149861aBade4B4b`
 
 
 
