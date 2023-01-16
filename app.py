@@ -109,7 +109,7 @@ def main():
                 t1=time.time()
                 if isinstance(q,str):
                     response = openai.Completion.create(
-                      model="text-davinci-002",
+                      model="text-davinci-003",
                       
                       
                       prompt=pr+"Human: "+q+"\nAI:\n",
