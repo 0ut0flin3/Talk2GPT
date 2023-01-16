@@ -122,6 +122,7 @@ def main():
                             )
                         t2=time.time()
                         #print("response ok")
+                        pr = pr+"Human: "+q+"\nAI: "+response.choices[0].text+"\n"
                         memories.update({q:response.choices[0].text})
                         
                         ff=open("memories.json","w")
@@ -138,7 +139,7 @@ def main():
                         
                         
                         print('\n')
-                        print(pr)
+                        
                 
 
 main()
