@@ -1,13 +1,8 @@
-
 '''
 MIT License
-
 Copyright (c) 2022 0ut0flin3
-
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 '''
 
@@ -101,45 +96,49 @@ def main():
     f.close()
 
     while True:
-
+                
                 
                 q=convert_speech_to_text()
-                print("Human: "+q)
-                print('\n')
-                t1=time.time()
-                if isinstance(q,str):
-                    response = openai.Completion.create(
-                      model="text-davinci-003",
-                      
-                      
-                      prompt=pr+"Human: "+q+"\nAI:\n",
-                      temperature=1,
-                      max_tokens=3000,
-                      top_p=1,
-                      
-                      frequency_penalty=0.0,
-                      presence_penalty=0.0,
-                      stop=[" Human:", " AI:"],
-                      
-                    )
-                t2=time.time()
-                #print("response ok")
-                memories.update({q:response.choices[0].text})
-                
-                ff=open("memories.json","w")
-                j=json.dump(memories,ff)
-                ff.close()
-                print("AI: "+response.choices[0].text)
-                print("\n\n["+str(t2-t1)[:4]+" seconds]\n\n")
-                myobj = gTTS(text=response.choices[0].text, lang=LANGUAGE_GTTS_FORMAT, slow=False)
-                myobj.save("answer.mp3")
-                if os.name=="posix":
-                   os.system("mpg321 answer.mp3")
-                if os.name=="nt":
-                   p = playsound.playsound("answer.mp3")
-                   
-                
-                print('\n')
+                if q==None:
+                   continue
+                else:
+                        print("Human: "+q)
+                        print('\n')
+                        t1=time.time()
+                        if isinstance(q,str):
+                            response = openai.Completion.create(
+                            model="text-davinci-003",
+                            
+                            
+                            prompt=pr+"Human: "+q+"\nAI:\n",
+                            temperature=1,
+                            max_tokens=3000,
+                            top_p=1,
+                            
+                            frequency_penalty=0.0,
+                            presence_penalty=0.0,
+                            stop=[" Human:", " AI:"],
+                            
+                            )
+                        t2=time.time()
+                        #print("response ok")
+                        memories.update({q:response.choices[0].text})
+                        
+                        ff=open("memories.json","w")
+                        j=json.dump(memories,ff)
+                        ff.close()
+                        print("AI: "+response.choices[0].text)
+                        print("\n\n["+str(t2-t1)[:4]+" seconds]\n\n")
+                        myobj = gTTS(text=response.choices[0].text, lang=LANGUAGE_GTTS_FORMAT, slow=False)
+                        myobj.save("answer.mp3")
+                        if os.name=="posix":
+                           os.system("mpg321 answer.mp3")
+                        if os.name=="nt":
+                           p = playsound.playsound("answer.mp3")
+                        
+                        
+                        print('\n')
+                        print(pr)
                 
 
 main()
