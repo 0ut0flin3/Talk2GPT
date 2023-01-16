@@ -7,6 +7,9 @@ A Python script to use OpenAI's text-davinci-003 model using your own voice inst
 
 **--Say "goodbye" or "go to sleep" to quit--**
 
+**Lots of other exciting features will be added! please consider [DONATE](https://github.com/0ut0flin3/openai-davinci003-python-speech/edit/main/README.md#donate) if you found this app useful or if you will use it for profitable projects, THANK YOU <3 -> `17AnP1zuvLV9cQrGQi6H6qMLeWeujHzAYX`**
+**For anything do not hesitate to write me 0ut0flin3@protonmail.com**
+
 
 [REQUIRMENTS & HOW-TO-USE (PLEASE READ FIRST!)](https://github.com/0ut0flin3/openai-davinci003-python-speech/blob/main/README.md#requirments-and-how-to-use-read-please)
 
@@ -121,3 +124,22 @@ so it will remember what you said.
 Start the app with `python3 app.py 2>/dev/null` on Linux
 or `python app.py` on Windows
 and say something...the AI will reply (with voice too)! 
+
+## DONATE
+
+If you found this software useful please consider a donation:
+
+
+Bitcoin: 17AnP1zuvLV9cQrGQi6H6qMLeWeujHzAYX
+
+Monero: 82qjYLZj6XeTGjeUNm9AQVB78hVGStZd8YU1UKuvWz8QKAzFWZpBpEQFho3jrvUCNQPSqC9nYeEN3b7FQ5REPffNSA2WSDH
+
+Solana: 6RX2ADdcNWZfaUfuGeHg86AYAoMuLF45Lbgfu3oNGh9i
+
+Litecoin: ltc1q4ft4ltjnyt8auqq4m5u7raatftu6mt5snst493
+
+Ethereum: 0xF3A0246690947669A0bf68147Ba82AC8de576a56
+
+
+
+Thank you :-)
