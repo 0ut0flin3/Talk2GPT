@@ -1,5 +1,5 @@
 # VoiceGPT
-A Python script to use OpenAI's text-davinci-003 model using your own voice instead of text.
+A way to use OpenAI's GPT using your own voice instead of text.
 
 **--UPDATES:** 
 
