@@ -101,7 +101,7 @@ try:
         pyproc=pyproc.split()[1:]
         for proc in pyproc:
             os.system("kill -9 "+proc)
-    if os
+    
 except:
        pass
        
