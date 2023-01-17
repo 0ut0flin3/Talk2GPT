@@ -1,10 +1,11 @@
 **[JOIN DISCORD ![JOIN DISCORD](https://user-images.githubusercontent.com/114559605/212726176-c12535dc-07af-4884-8d91-9d36d225d2f9.png)
-](https://discord.gg/mettNtATzW)**
+](https://discord.gg/mettNtATzW)** **[TWITTER ![](https://user-images.githubusercontent.com/114559605/212788720-7d494d56-1e3d-4294-9280-83695b98713d.png)](https://twitter.com/gptalk1)**
 # GPTalk
 
 A way to use OpenAI's GPT using your own voice instead of text.
 
 **--UPDATES:** 
+
 
 **--Now it could work on windows too (but not personally tested yet)--**
 
