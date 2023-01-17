@@ -7,7 +7,7 @@ A way to use OpenAI's GPT using your own voice instead of text.
 **--UPDATES:** 
 
 
-**--Now it could work on windows too (but not personally tested yet)--**
+**--Now it could work on windows too (but not personally tested yet, feedbacks appreciated)--**
 
 **--Say "goodbye" or "go to sleep" to quit--**
 
