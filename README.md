@@ -7,14 +7,10 @@ Interact with GPT using your own voice instead of text.
 
 **--UPDATES:** 
 
-
-**--Now it could work on windows too (but not personally tested yet, feedbacks appreciated)--**
-
 **--Say "goodbye" or "go to sleep" to quit--**
 
-**Lots of other exciting features will be added!**
-**please consider [DONATE](https://github.com/0ut0flin3/VoiceGPT#donate) if you found this app useful or if you will use it for profitable projects, THANK YOU <3**
-**For anything do not hesitate to write me 0ut0flin3@protonmail.com**
+**Lots of other features will be added**
+
 
 
 
