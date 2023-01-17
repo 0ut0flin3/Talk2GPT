@@ -6,7 +6,7 @@ Interact with GPT using your own voice instead of text.
 
 **...Constantly updated with new features...**
 
-
+**UPDATE: now you can customize some aspects of the AI like his name, his 'mood' that he will have to keep during the conversation, his hobbies, you can also choose what "species" he will have to be (for example a cat, or an alien LOL)**
 
 
 
@@ -118,6 +118,7 @@ zh-TW Chinese Taiwan
 Initially it is empty, every question and answer given with the AI is added to the file and every time the speeches are added to the prompt automatically
 so it will remember what you said.
 **IF YOU WANT TO RESET THE MEMORY JUST OVERWRITE ALL THE CONTENT OF THE FILE WITH `{}` (so it must not be completely empty but contain `{}` otherwise it will cause an error)**
+
 
 
 ## START THE APP
