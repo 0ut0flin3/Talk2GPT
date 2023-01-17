@@ -15,9 +15,6 @@ import time
 if os.name=='nt':
    import playsound
 
-
-global EXIT;EXIT=['exit','quit','goodbye','exit now','go to sleep']
-
 class bcolors:
     HEADER = '\033[95m'
     OKBLUE = '\033[94m'
@@ -28,7 +25,58 @@ class bcolors:
     ENDC = '\033[0m'
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
+global EXIT;EXIT=['exit','quit','goodbye','exit now','go to sleep','shutdown','go for a walk','goodnight']
 
+global AI_NAME, HUMAN_NAME, AI_GENRE, HUMAN_HOBBIES, AI_HOBBIES,AI_SPECIES,AI_AGE,AI_MOOD,HUMAN_AGE,HUMAN_GENRE,HUMAN_SPECIES,HUMAN_MOOD
+global LOL
+
+print("-------------------------")
+print("GPTalk by 0ut0flin3")
+print("-------------------------")
+print(bcolors.OKGREEN+"If you found this software useful please consider a donation: https://github.com/0ut0flin3/GPTalk#donate"+bcolors.ENDC)
+print("-------------------------");print("\n\n\n")
+
+def wanttocustomize():
+
+    ww=input("Want to customize the looks, details, and behavior of the AI? (Y/N) > ")
+    if ww in ['yes','YES','y','Y']:
+        return True
+    elif ww in ["no",'NO','n','N']:
+        return False
+    else:
+         return None
+         
+    
+def custom_inputs():
+    global LOL
+    if wanttocustomize()==True:
+        AI_SPECIES=input(bcolors.HEADER+"Of which living species (or not) should the AI ​​be? (a human, a cat, a vegetable, a tree or anything else...)\n Choose what the AI ​​will be.\n This AI will be... "+bcolors.ENDC)
+        print('\n\n')
+        AI_GENRE=input(bcolors.HEADER+"Choose the genre for the AI (male, female, ...): "+bcolors.ENDC)
+        print('\n\n')
+        AI_NAME=input(bcolors.HEADER+"Choose a name for the AI:   "+bcolors.ENDC)
+        print('\n\n')
+        AI_AGE=input(bcolors.HEADER+"Choose an age for the AI:   "+bcolors.ENDC)
+        print('\n\n')
+        AI_HOBBIES=input(bcolors.HEADER+"Choose some hobbies that the AI will have:   "+bcolors.ENDC)
+        print('\n\n')
+        AI_MOOD=input(bcolors.HEADER+"Choose a mood for the AI (e.g. happy, angry):   "+bcolors.ENDC)
+        print('\n\n\n\n')
+        HUMAN_SPECIES=input(bcolors.HEADER+"Of which living species (or not) should YOU ​​be? (Human, animal, a vegetable, a tree, anything..)\nChoose what YOU ​​will be.\n I am...    "+bcolors.ENDC)
+        print('\n\n')
+        HUMAN_GENRE=input(bcolors.HEADER+"Choose you genre (male, female, ...):   "+bcolors.ENDC)
+        print('\n\n')
+        HUMAN_NAME=input(bcolors.HEADER+"Your name:   "+bcolors.ENDC)
+        print('\n\n')
+        HUMAN_AGE=input(bcolors.HEADER+"Your age:   "+bcolors.ENDC)
+        print('\n\n')
+        HUMAN_HOBBIES=input(bcolors.HEADER+"Your hobbies: "+bcolors.ENDC)
+              
+        LOL_0=f"Your name is {AI_NAME}, you are {AI_SPECIES}, your genre is {AI_GENRE}, your age is {AI_AGE}, your hobbies are: {AI_HOBBIES}.You must always reply me to questions in a {AI_MOOD} manner. My name is {HUMAN_NAME}, I'm not a human, I am {HUMAN_SPECIES}, my genre is {HUMAN_GENRE}, my age is {HUMAN_AGE}, my hobbies are {HUMAN_HOBBIES}"
+        LOL_1=f"Ok, my name is {AI_NAME}, i am {AI_SPECIES}, my genre is {AI_GENRE}, my age is {AI_AGE}, my hobbies are: {AI_HOBBIES}. I will always reply to your questions in a {AI_MOOD} manner. your name is {HUMAN_NAME}, you are not a human, you are {HUMAN_SPECIES}, your genre is {HUMAN_GENRE}, your age is {HUMAN_AGE}, your hobbies are {HUMAN_HOBBIES}"
+        LOL={LOL_0:LOL_1}
+    else:
+        LOL=''
 
 # WRITTEN BY 0UT0FLIN3 (github.com/0ut0flin3)#### 0UT0FLIN3@PROTONMAIL.COM ####
 ###SPECIAL THANKS <3 TO: https://github.com/openai/openai-python, https://github.com/Uberi/speech_recognition, https://github.com/pndurette/gTTS
@@ -43,14 +91,19 @@ class bcolors:
 
 
 #### READ!! First of all, kill all other existent python3 processes because cause mistakes with speech_recognition module (just for me,if you're not affected you can remove this part of code)
-import subprocess
-import os
-if os.name=="posix":
-	pyproc=subprocess.check_output(['pidof', 'python3']).decode()
-	pyproc=pyproc.replace("\n","")
-	pyproc=pyproc.split()[1:]
-	for proc in pyproc:
-	    os.system("kill -9 "+proc)
+'''
+try:
+    import subprocess
+    import os
+    if os.name=="posix":
+        pyproc=subprocess.check_output(['pidof', 'python3']).decode()
+        pyproc=pyproc.replace("\n","")
+        pyproc=pyproc.split()[1:]
+        for proc in pyproc:
+            os.system("kill -9 "+proc)
+except:
+       pass
+'''       
 ################################################
 
 
@@ -83,11 +136,11 @@ def main():
     r = speech_recognition.Recognizer()
     def convert_speech_to_text():
      
-        # capture the audio
+        
         with speech_recognition.Microphone() as source:
             audio = r.listen(source)
      
-        # convert the speech to text
+        
         try:
             text = r.recognize_google(audio,language=LANGUAGE_SR_FORMAT, show_all=True)
             return text['alternative'][0]['transcript']
@@ -97,15 +150,18 @@ def main():
     try:
         f=open("memories.json","r")
         memories=json.load(f)
+        memories.update(LOL)
         for m in memories:
                     pr=pr+"Human: "+m+"\nAI:"+memories[m]+"\n"
+        
         print("-------------------------")
         print("GPTalk by 0ut0flin3")
-        print(bcolors.OKGREEN+"If you found this software useful please consider a donation: https://github.com/0ut0flin3/GPTalk#donate"+bcolors.ENDC)
         print("-------------------------")
-        print("AI Memories loaded\n\n")
-    except:
-           print("Can't load AI's memories from memories.json file. Be sure that the file is not fully empty. It must have at least two brackets {}")
+        print(bcolors.OKGREEN+"If you found this software useful please consider a donation: https://github.com/0ut0flin3/GPTalk#donate"+bcolors.ENDC)
+        print("-------------------------");print("\n\n")
+        print(bcolors.BOLD+"AI Memories loaded\n\n"+bcolors.ENDC);print("\n\n\n")
+    except Exception as ex:
+           print(ex,"Can't load AI's memories from memories.json file. Be sure that the file is not fully empty. It must have at least two brackets {}")
     f.close()
 
     while True:
@@ -134,7 +190,7 @@ def main():
                             
                             )
                         t2=time.time()
-                        #print("response ok")
+                        
                         pr = pr+"Human: "+q+"\nAI: "+response.choices[0].text+"\n"
                         memories.update({q:response.choices[0].text})
                         
@@ -150,12 +206,26 @@ def main():
                         if os.name=="nt":
                            p = playsound.playsound("answer.mp3")
                         
-                        print(bcolors.OKGREEN+"If you found this software useful please consider a donation: https://github.com/0ut0flin3/GPTalk#donate"+bcolors.ENDC)
-
+                        print("If you found this software useful please consider a donation: https://github.com/0ut0flin3/VoiceGPT#donate")
+                         
                         print('\n')
+                        
                         if q in EXIT:
                            break
                         
-                
-
+if os.path.isfile("memories.json"):
+   
+    ff=open("memories.json","r")
+    mem=json.load(ff)
+    if len(mem)>0:
+        ccc=input('''Some memories already exist. Do you want to import it? or reset all previous memories?If you import already existing memories, obviously, it will not be possible to re-customize the AI ​aspects again, since they are already imprinted in the memory you will import and different memories would intertwine.Otherwise, if you choose to reset memories, '''+bcolors.WARNING+'''ALL PREVIOUS INTERACTIONS WILL BE ERASED and LOST FOREVER '''+bcolors.ENDC+'''and you can customize a new AI in the next step.If you press ENTER or type anything other than RESET (uppercase), the memories will be imported.(Press ENTER to import / type RESET to reset) >   ''')
+        if ccc=="RESET" :
+            mem={}
+            fff=open("memories.json","w")
+            jjj=json.dump(mem,fff)
+            fff.close()
+            print(bcolors.WARNING+"AI memories have been reset."+bcolors.ENDC);print('\n\n')
+            custom_inputs();main()
+    else:
+         custom_inputs()
 main()
