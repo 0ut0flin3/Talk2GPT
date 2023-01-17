@@ -70,7 +70,7 @@ So, first of all, install all required packages\modules:
 
 
 
-You should now be able to use the app with `python3 app.py 2>/dev/null` but **FIRST** take a look at the 2 JSON files that come with the script: `speech_language.json` and `memories.json`
+You should now be able to use the app with `python3 app.py` but **FIRST** take a look at the 2 JSON files that come with the script: `speech_language.json` and `memories.json`
 
 ### speech_language.json : 
 contains the language that you want use to speak. You can change it, you can use any language.below the tickers for the languages
@@ -123,8 +123,7 @@ so it will remember what you said.
 
 
 ## START THE APP
-Start the app with `python3 app.py 2>/dev/null` on Linux
-or `python app.py` on Windows
+Start the app with `python3 app.py` (or `python3 app.py 2>/dev/null` to hide ALSA logs)
 and say something...the AI will reply (with voice too)! 
 
 ## DONATE
