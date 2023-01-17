@@ -72,8 +72,8 @@ def custom_inputs():
         print('\n\n')
         HUMAN_HOBBIES=input(bcolors.HEADER+"Your hobbies: "+bcolors.ENDC)
               
-        LOL_0=f"Your name is {AI_NAME}, you are {AI_SPECIES}, your genre is {AI_GENRE}, your age is {AI_AGE}, your hobbies are: {AI_HOBBIES}.You must always reply me to questions in a {AI_MOOD} manner. My name is {HUMAN_NAME}, I'm not a human, I am {HUMAN_SPECIES}, my genre is {HUMAN_GENRE}, my age is {HUMAN_AGE}, my hobbies are {HUMAN_HOBBIES}"
-        LOL_1=f"Ok, my name is {AI_NAME}, i am {AI_SPECIES}, my genre is {AI_GENRE}, my age is {AI_AGE}, my hobbies are: {AI_HOBBIES}. I will always reply to your questions in a {AI_MOOD} manner. your name is {HUMAN_NAME}, you are not a human, you are {HUMAN_SPECIES}, your genre is {HUMAN_GENRE}, your age is {HUMAN_AGE}, your hobbies are {HUMAN_HOBBIES}"
+        LOL_0=f"Your name is {AI_NAME}, you are {AI_SPECIES}, your genre is {AI_GENRE}, your age is {AI_AGE}, your hobbies are: {AI_HOBBIES}.Reply to questions with an {AI_MOOD} tone. My name is {HUMAN_NAME}, I'm not a human, I am {HUMAN_SPECIES}, my genre is {HUMAN_GENRE}, my age is {HUMAN_AGE}, my hobbies are {HUMAN_HOBBIES}"
+        LOL_1=f"Ok, my name is {AI_NAME}, i am {AI_SPECIES}, my genre is {AI_GENRE}, my age is {AI_AGE}, my hobbies are: {AI_HOBBIES}. I'll reply to questions with an {AI_MOOD} tone. your name is {HUMAN_NAME}, you are not a human, you are {HUMAN_SPECIES}, your genre is {HUMAN_GENRE}, your age is {HUMAN_AGE}, your hobbies are {HUMAN_HOBBIES}"
         LOL={'':[],LOL_0:LOL_1}
     else:
         LOL=''
@@ -91,19 +91,20 @@ def custom_inputs():
 
 
 #### READ!! First of all, kill all other existent python3 processes because cause mistakes with speech_recognition module (just for me,if you're not affected you can remove this part of code)
-'''
+
 try:
     import subprocess
     import os
     if os.name=="posix":
-        pyproc=subprocess.check_output(['pidof', 'python3']).decode()
+        pyproc=subprocess.check_output(['pidof', 'python3', '2>/dev/null']).decode()
         pyproc=pyproc.replace("\n","")
         pyproc=pyproc.split()[1:]
         for proc in pyproc:
             os.system("kill -9 "+proc)
+    if os
 except:
        pass
-'''       
+       
 ################################################
 
 
