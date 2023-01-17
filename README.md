@@ -1,15 +1,14 @@
 **[JOIN DISCORD](https://discord.gg/mettNtATzW)**
 
 **[TWITTER](https://twitter.com/gptalk1)**
+
+**[DONATE](https://github.com/0ut0flin3/GPTalk/README.md#donate)**
+
 # GPTalk
 
 Interact with GPT using your own voice instead of text.
 
-**--UPDATES:** 
-
-**--Say "goodbye" or "go to sleep" to quit--**
-
-**Lots of other features will be added**
+**...Constantly updated with new features...**
 
 
 
