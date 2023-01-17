@@ -6,6 +6,8 @@ Interact with GPT using your own voice instead of text.
 
 **...Constantly updated with new features...**
 
+**next update: enable file-system mode!**
+
 **UPDATE: now you can customize some aspects of the AI like his name, his age,  the 'mood' that he/she/it will have to keep during the conversation, his hobbies, you can also choose what "species" he will have to be (for example a cat, or an alien LOL)**
 **You can customize your aspects too! (Your name, your age etc..)**
 
