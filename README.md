@@ -2,7 +2,7 @@
 
 **[TWITTER](https://twitter.com/gptalk1)**
 
-**[DONATE](https://github.com/0ut0flin3/GPTalk/README.md#donate)**
+**[DONATE](https://github.com/0ut0flin3/GPTalk#donate)**
 
 # GPTalk
 
