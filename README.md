@@ -1,10 +1,6 @@
-**[JOIN DISCORD](https://discord.gg/mettNtATzW)**
-
-**[TWITTER](https://twitter.com/gptalk1)**
-
-**[DONATE](https://github.com/0ut0flin3/GPTalk#donate)**
-
 # GPTalk
+
+**[JOIN DISCORD](https://discord.gg/mettNtATzW)** **|** **[TWITTER](https://twitter.com/gptalk1)** **|** **[DONATE](https://github.com/0ut0flin3/GPTalk#donate)**
 
 Interact with GPT using your own voice instead of text.
 
