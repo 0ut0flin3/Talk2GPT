@@ -8,7 +8,8 @@ Interact with GPT using your own voice instead of text.
 
 **UPDATE: now you can customize some aspects of the AI like his name, his age,  the 'mood' that he/she/it will have to keep during the conversation, his hobbies, you can also choose what "species" he will have to be (for example a cat, or an alien LOL)**
 **You can customize your aspects too! (Your name, your age etc..)**
-**You can quit sayng `goodbye` or `shutdown` or `go to sleep`**
+
+**You can quit saying `goodbye` or `shutdown` or `go to sleep`**
 
 
 
