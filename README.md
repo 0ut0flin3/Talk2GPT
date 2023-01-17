@@ -3,7 +3,7 @@
 **[TWITTER](https://twitter.com/gptalk1)**
 # GPTalk
 
-A way to use OpenAI's GPT using your own voice instead of text.
+Interact with GPT using your own voice instead of text.
 
 **--UPDATES:** 
 
