@@ -28,9 +28,6 @@ Interact with GPT-3 using your voice instead of text, in any language.
 
 -have your OpenAI's Api key inside the OPENAI_API_KEY environment variable.
 
--install these Python modules: `openai`,`SpeechRecognition`,`gTTS`,`PyAudio` (and also `playsound` if you are on Windows).
- You can also use the `requirements.txt` file to automatically install all the required modules in one shot with `pip install -r requirements.txt`
-
 
 -install `mpg321` (a mp3 player for linux) only if you are on Linux.
 
