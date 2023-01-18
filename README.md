@@ -45,6 +45,8 @@ Upgrade gptalk from time to time with pip install -U so that you always use the 
 
 ## USAGE
 
+In addition to communicating with gpt3 using the voice it is also possible to define some aspects of its behavior and personal details, as well as those of gpt3, even yours.
+
 Some examples:
 
 ***>>>***`import gptalk.gptalk as gpt3`
