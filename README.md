@@ -42,7 +42,10 @@ Interact with GPT-3 using your voice instead of text, in any language.
 
 Install GPTalk using PIP: `pip install -U gptalk`
 
-Always use `-U` in order to install the latest version available
+Always use `-U` in order to install the latest version available.
+
+Upgrade gptalk from time to time with pip install -U so that you always use the updated and bugfixed version.
+
 
 ## USAGE
 
