@@ -83,7 +83,7 @@ AVAILABLE PARAMETERS  : `AI_NAME`, `AI_AGE`, `AI_HOBBIES`,` AI_GENRE`, `AI_MOOD`
 If you want change speech language (en-US is default) use `app.language=<LANGUAGE_TICKER>` (before run)
 
 
-More examples on the GPTalk Discord Server >> https://discord.gg/mettNtATzW
+Give a feedback, positive or negative,it's very apprecciated >> https://discord.gg/mettNtATzW
 
 
 
