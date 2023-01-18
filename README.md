@@ -66,7 +66,7 @@ Some examples:
 then, save:
 
 
-***>>>***`app.save() #will create a memories.json file in the same folder that will also store and remember previous conversations. every time you run this command  Will be replaced, but you can run`
+***>>>***`app.save() #will create a memories.json file in the same folder that will also store and remember previous conversations.Every time you run save(), memories.json will be replaced with new. You can just run directly run() in the next step to use already existent`
 
 and,then, run the app:
 
