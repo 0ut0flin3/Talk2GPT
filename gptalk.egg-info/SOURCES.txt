@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.cfg
+gptalk/__init__.py
+gptalk/gptalk.py
+gptalk.egg-info/PKG-INFO
+gptalk.egg-info/SOURCES.txt
+gptalk.egg-info/dependency_links.txt
+gptalk.egg-info/top_level.txt

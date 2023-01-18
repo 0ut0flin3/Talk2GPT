@@ -1,0 +1,26 @@
+[build-system]
+requires      = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gptalk"
+version = "0.0.1"
+description = "Interact with GPT-3 using your voice instead of text, in any language"
+readme = "README.md"
+authors = [{ name = "0ut0flin3", email = "0ut0flin3@protonmail.com" }]
+license = { file = "LICENSE.md" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["speech-recognition","tts","gpt3","chatgpt","speech-to-text","ai"]
+requires-python = ">=3.6"
+dynamic = ["dependencies"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+
+[project.urls]
+Homepage = "https://github.com/0ut0flin3/gptalk"
