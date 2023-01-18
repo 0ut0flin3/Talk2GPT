@@ -5,8 +5,7 @@
 
 **[JOIN DISCORD](https://discord.gg/mettNtATzW)** **|** **[TWITTER](https://twitter.com/gptalk1)** **|** **[DONATE](https://github.com/0ut0flin3/GPTalk#donate)**
 
-Interact with GPT-3 using voice as well as text, in any language
-
+Interact with GPT-3 using voice as well as text, in any language and with extended features
 
 
 
