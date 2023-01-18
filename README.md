@@ -1,76 +1,75 @@
 # GPTalk
 
+<img src="https://user-images.githubusercontent.com/114559605/213072836-213cd555-68fc-496a-8613-23c8dcf4c06c.png" height="250" width="250">
+
+
 **[JOIN DISCORD](https://discord.gg/mettNtATzW)** **|** **[TWITTER](https://twitter.com/gptalk1)** **|** **[DONATE](https://github.com/0ut0flin3/GPTalk#donate)**
 
-Interact with GPT using your own voice instead of text.
-
-**JANUARY 18 2023 - MIGRATING TO PYPI - STAy TUN3D https://discord.gg/mettNtATzW**
+Interact with GPT-3 using your voice instead of text, in any language.
 
 
 
 
-[REQUIRMENTS & HOW-TO-USE (PLEASE READ FIRST!)](https://github.com/0ut0flin3/openai-davinci003-python-speech/blob/main/README.md#requirments-and-how-to-use-read-please)
 
-[Install dependencies Windows](https://github.com/0ut0flin3/openai-davinci003-python-speech/blob/main/README.md#for-windows)
+[REQUIREMENTS](https://github.com/0ut0flin3/GPTalk#requirments)
 
-[Install dependencies Linux](https://github.com/0ut0flin3/openai-davinci003-python-speech/blob/main/README.md#for-linux)
+[INSTALLATION](https://github.com/0ut0flin3/GPTalk#nstallation)
 
-THEN
+[USAGE](https://github.com/0ut0flin3/GPTalk#usage)
 
-[Start the app](https://github.com/0ut0flin3/openai-davinci003-python-speech/blob/main/README.md#start-the-app)
-
-
-## REQUIRMENTS and HOW TO USE (READ PLEASE!)
-
-
--In order to use this script you need to :
-
--have your OpenAI's Api key inside the OPENAI_API_KEY environment variable
-
--install these Python modules: `openai`,`SpeechRecognition`,`gTTS`,`PyAudio` (and also `playsound` if you are on Windows)
-
-
--install `mpg321` (a mp3 player for linux) only if you are on Linux
+[LIST OF SUPPORTED LANGUAGES](https://github.com/0ut0flin3/GPTalk#languages)
 
 
 
-So, first of all, install all required packages\modules:
+## REQUIREMENTS
 
-## FOR LINUX:
 
-`sudo apt install mpg321 python3-dev portaudio19-dev`
- 
-`pip install openai`
+-In order to use GPTalk you need to :
 
-`pip install SpeechRecognition`
+-have your OpenAI's Api key inside the OPENAI_API_KEY environment variable.
 
-`pip install gTTS`
+-install these Python modules: `openai`,`SpeechRecognition`,`gTTS`,`PyAudio` (and also `playsound` if you are on Windows).
+ You can also use the `requirements.txt` file to automatically install all the required modules in one shot with `pip install -r requirements.txt`
 
-`pip install PyAudio`
 
-## FOR WINDOWS:
+-install `mpg321` (a mp3 player for linux) only if you are on Linux.
 
-`pip install openai`
-
-`pip install SpeechRecognition`
-
-`pip install gTTS`
-
-`pip install PyAudio`
-
-`pip install playsound`
-
-\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 **If you have some mistakes in installing PyAudio read this topic: [https://stackoverflow.com/questions/20023131/cannot-install-pyaudio-gcc-error](https://stackoverflow.com/questions/20023131/cannot-install-pyaudio-gcc-error)**
 
 
+## INSTALLATION
 
-You should now be able to use the app with `python3 app.py` but **FIRST** take a look at the 2 JSON files that come with the script: `speech_language.json` and `memories.json`
+You can install GPTalk using PIP: `pip install gptalk`
 
-### speech_language.json : 
-contains the language that you want use to speak. You can change it, you can use any language.below the tickers for the languages
+## USAGE
+
+Some examples:
+
+***>>>***`import gptalk.gptalk as gpt3`
+
+***>>>***`app = gpt3.CONFIGURE()`
+
+***>>>***`app.AI_NAME = "Alice"`
+
+***>>>***`app.AI_GENRE = "female"`
+
+***>>>***`app.save() #will create a memories.json file in the same folder. Will be replaced every time you run this command`
+
+***>>>***`app.run()`
+
+Start talking.
+
+Say `goodbye` to quit.
+
+Set language with `app.language=<LANGUAGE_TICKER>`
+
+
+More examples on the GPTalk Discord Server >> https://discord.gg/mettNtATzW
+
+
+
+## LANGUAGES
 
 ```
 ar-SA Arabic Saudi Arabia
@@ -117,11 +116,6 @@ Initially it is empty, every question and answer given with the AI is added to t
 so it will remember what you said.
 **IF YOU WANT TO RESET THE MEMORY JUST OVERWRITE ALL THE CONTENT OF THE FILE WITH `{}` (so it must not be completely empty but contain `{}` otherwise it will cause an error)**
 
-
-
-## START THE APP
-Start the app with `python3 app.py` (or `python3 app.py 2>/dev/null` to hide ALSA logs)
-and say something...the AI will reply (with voice too)! 
 
 ## DONATE
 
