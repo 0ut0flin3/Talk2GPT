@@ -67,8 +67,9 @@ Start talking.
 
 Say `goodbye` to quit.
 
-Set language with `app.language=<LANGUAGE_TICKER>`
+Set a language (before run) with `app.language=<LANGUAGE_TICKER>`
 
+AVAILABLE PARAMETERS  : `AI_NAME`, `AI_AGE`, `AI_HOBBIES`,` AI_GENRE`, `AI_MOOD`, `AI_SPECIES` , `HUMAN_NAME`, `HUMAN_AGE`, `HUMAN_HOBBIES`,` HUMAN_GENRE`, `HUMAN_MOOD`, `HUMAN_SPECIES`
 
 More examples on the GPTalk Discord Server >> https://discord.gg/mettNtATzW
 
