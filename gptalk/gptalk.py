@@ -108,7 +108,7 @@ def gptalk(l1,l2):
     if os.name=="nt":
        os.system('cls')
     openai.api_key = os.getenv("OPENAI_API_KEY") 
-    print(l1,l2)
+    
     global memories
     global pr
     global f
@@ -123,9 +123,11 @@ def gptalk(l1,l2):
         
         try:
             text = r.recognize_google(audio,language=l1, show_all=True)
+            if text==[]:
+               pass
             return text['alternative'][0]['transcript']
-        except Exception as ex:
-               print(ex)
+        except:
+               pass
 
     try:
         f=open("memories.json","r")

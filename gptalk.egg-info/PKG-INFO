@@ -1,8 +1,7 @@
 Metadata-Version: 2.1
 Name: gptalk
-Version: 0.0.1
+Version: 0.0.3.6
 Summary: Interact with GPT-3 using your voice instead of text, in any language
-Home-page: https://github.com/0ut0flin3/gptalk
 Author: 0ut0flin3
 Author-email: 0ut0flin3 <0ut0flin3@protonmail.com>
 License: MIT License
@@ -32,7 +31,7 @@ Keywords: speech-recognition,tts,gpt3,chatgpt,speech-to-text,ai
 Classifier: License :: OSI Approved :: MIT License
 Classifier: Programming Language :: Python
 Classifier: Programming Language :: Python :: 3
-Requires-Python: >=3.6
+Requires-Python: >=3
 Description-Content-Type: text/markdown
 License-File: LICENSE.md
 
@@ -66,27 +65,24 @@ Interact with GPT-3 using your voice instead of text, in any language.
 
 -have your OpenAI's Api key inside the OPENAI_API_KEY environment variable.
 
--install these Python modules: `openai`,`SpeechRecognition`,`gTTS`,`PyAudio` (and also `playsound` if you are on Windows).
- You can also use the `requirements.txt` file to automatically install all the required modules in one shot with `pip install -r requirements.txt`
-
-
 -install `mpg321` (a mp3 player for linux) only if you are on Linux.
-
-
-**If you have some mistakes in installing PyAudio read this topic: [https://stackoverflow.com/questions/20023131/cannot-install-pyaudio-gcc-error](https://stackoverflow.com/questions/20023131/cannot-install-pyaudio-gcc-error)**
 
 
 ## INSTALLATION
 
-You can install GPTalk using PIP: `pip install gptalk`
+Install GPTalk using PIP: `pip install -U gptalk`
+
+Always use `-U` in order to install the latest version available.
+
+Upgrade gptalk from time to time with pip install -U so that you always use the updated and bugfixed version.
 
 ## USAGE
 
 Some examples:
 
-***>>>***`import gptalk.gptalk as gpt3`
+***>>>***`import gptalk`
 
-***>>>***`app = gpt3.CONFIGURE()`
+***>>>***`app = gptalk.CONFIGURE()`
 
 ***>>>***`app.AI_NAME = "Alice"`
 
