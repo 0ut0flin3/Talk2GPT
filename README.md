@@ -38,7 +38,7 @@ Interact with GPT-3 using your voice instead of text, in any language.
 **If you have some mistakes in installing PyAudio read this topic: [https://stackoverflow.com/questions/20023131/cannot-install-pyaudio-gcc-error](https://stackoverflow.com/questions/20023131/cannot-install-pyaudio-gcc-error)**
 
 
-## INSTALLATION
+## INSTALLATION 
 
 Install GPTalk using PIP: `pip install -U gptalk`
 
