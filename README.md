@@ -4,7 +4,7 @@
 
 Interact with GPT using your own voice instead of text.
 
-**MIGRATING TO PYPY - STAI TUNED https://discord.gg/mettNtATzW**
+** JANUARY 18 2023 - MIGRATING TO PYPY - STAI TUNED https://discord.gg/mettNtATzW**
 
 
 
