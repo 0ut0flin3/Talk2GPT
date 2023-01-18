@@ -32,7 +32,6 @@ Interact with GPT-3 using your voice instead of text, in any language.
 -install `mpg321` (a mp3 player for linux) only if you are on Linux.
 
 
-**If you have some mistakes in installing PyAudio read this topic: [https://stackoverflow.com/questions/20023131/cannot-install-pyaudio-gcc-error](https://stackoverflow.com/questions/20023131/cannot-install-pyaudio-gcc-error)**
 
 
 ## INSTALLATION 
