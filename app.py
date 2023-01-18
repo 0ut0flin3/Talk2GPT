@@ -128,7 +128,7 @@ def main():
        os.system('clear')
     if os.name=="nt":
        os.system('cls')
-    openai.api_key = os.getenv("OPENAI_API_KEY") 
+    openai.api_key = open("apikey.txt","r").read()
     
     global memories
     global pr
