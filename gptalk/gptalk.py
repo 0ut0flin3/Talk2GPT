@@ -13,8 +13,10 @@ import openai
 import json
 import os
 import time
+import sys
 if os.name=='nt':
-   import playsound
+   from pygame import mixer,quit
+
 
 
 global ALL_LANGUAGES;ALL_LANGUAGES=[('ar-SA', 'Arabic Saudi Arabia'), ('cs-CZ', 'Czech Czech Republic'), ('da-DK', 'Danish Denmark'), ('de-DE', 'German Germany'), ('el-GR', 'Modern Greek Greece'), ('en-AU', 'English Australia'), ('en-GB', 'English United Kingdom'), ('en-IE', 'English Ireland'), ('en-US', 'English United States'), ('en-ZA', 'English South Africa'), ('es-ES', 'Spanish Spain'), ('es-MX', 'Spanish Mexico'), ('fi-FI', 'Finnish Finland'), ('fr-CA', 'French Canada'), ('fr-FR', 'French France'), ('he-IL', 'Hebrew Israel'), ('hi-IN', 'Hindi India'), ('hu-HU', 'Hungarian Hungary'), ('id-ID', 'Indonesian Indonesia'), ('it-IT', 'Italian Italy'), ('ja-JP', 'Japanese Japan'), ('ko-KR', 'Korean Republic of Korea'), ('nl-BE', 'Dutch Belgium'), ('nl-NL', 'Dutch Netherlands'), ('no-NO', 'Norwegian Norway'), ('pl-PL', 'Polish Poland'), ('pt-BR', 'Portuguese Brazil'), ('pt-PT', 'Portuguese Portugal'), ('ro-RO', 'Romanian Romania'), ('ru-RU', 'Russian Russian Federation'), ('sk-SK', 'Slovak Slovakia'), ('sv-SE', 'Swedish Sweden'), ('th-TH', 'Thai Thailand'), ('tr-TR', 'Turkish Turkey'), ('zh-CN', 'Chinese China'), ('zh-HK', 'Chinese Hong Kong'), ('zh-TW', 'Chinese Taiwan')]
@@ -107,6 +109,7 @@ def gptalk(l1,l2):
        os.system('clear')
     if os.name=="nt":
        os.system('cls')
+
     openai.api_key = os.getenv("OPENAI_API_KEY") 
     
     global memories
@@ -182,12 +185,23 @@ def gptalk(l1,l2):
                         print("\n\n["+str(t2-t1)[:4]+" seconds]\n\n")
                         myobj = gTTS(text=response.choices[0].text, lang=l2, slow=False)
                         myobj.save("answer.mp3")
+                        
                         if os.name=="posix":
                            os.system("mpg321 answer.mp3")
                         if os.name=="nt":
-                           p = playsound.playsound("answer.mp3")
+                           mixer.init()
+                           mixer.music.load("answer.mp3")
+                           
+                           mixer.music.play()
+                           while mixer.music.get_busy():
+                                 pass
+                           quit()
+                           
+                           os.remove('answer.mp3')
+
+
+                           
                         
-                        print("If you found this software useful please consider a donation: https://github.com/0ut0flin3/VoiceGPT#donate")
                          
                         print('\n')
                         

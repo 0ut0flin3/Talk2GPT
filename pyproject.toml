@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "gptalk"
-version = "0.0.3.6"
+version = "0.0.3.7"
 description = "Interact with GPT-3 using your voice instead of text, in any language"
 readme = "README.md"
 authors = [{ name = "0ut0flin3", email = "0ut0flin3@protonmail.com" }]
@@ -15,7 +15,7 @@ classifiers = [
     "Programming Language :: Python :: 3",
 ]
 keywords = ["speech-recognition","tts","gpt3","chatgpt","speech-to-text","ai"]
-requires-python = ">=3.6"
+requires-python = ">=3"
 dynamic = ["dependencies"]
 
 [tool.setuptools.dynamic]
