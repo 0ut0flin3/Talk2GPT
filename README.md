@@ -111,10 +111,7 @@ zh-HK Chinese Hong Kong
 zh-TW Chinese Taiwan
 ```
 
-### memories.json : 
-Initially it is empty, every question and answer given with the AI is added to the file and every time the speeches are added to the prompt automatically
-so it will remember what you said.
-**IF YOU WANT TO RESET THE MEMORY JUST OVERWRITE ALL THE CONTENT OF THE FILE WITH `{}` (so it must not be completely empty but contain `{}` otherwise it will cause an error)**
+
 
 
 ## DONATE
