@@ -55,13 +55,25 @@ Some examples:
 
 ***>>>***`app.AI_NAME = "Alice"`
 
+***>>>***`app.HUMAN_NAME = "Bob"`
+
 ***>>>***`app.AI_GENRE = "female"`
 
-***>>>***`app.save() #will create a memories.json file in the same folder. Will be replaced every time you run this command`
+***>>>***`app.AI_AGE = "32"`
+
+***>>>***`app.AI_MOOD = "happy"`
+
+then, save:
+
+
+***>>>***`app.save() #will create a memories.json file in the same folder that will also store and remember previous conversations. every time you run this command  Will be replaced, but you can run`
+
+and,then, run the app:
 
 ***>>>***`app.run()`
 
-Start talking.
+Start talking... gpt-3  should respond in a moment, but several factors can influence (try more times if you fail, move closer to the microphone)
+
 
 Say `goodbye` to quit.
 
