@@ -23,11 +23,7 @@ global ALL_LANGUAGES;ALL_LANGUAGES=[('ar-SA', 'Arabic Saudi Arabia'), ('cs-CZ', 
 
 
 
-class apikey():
-    def init(self, APIKEY):
-        APIKEY=self.APIKEY
-        openai.api_key=APIKEY
-global set_APIKEY;set_APIKEY=apikey()
+
 class bcolors:
     HEADER = '\033[95m'
     OKBLUE = '\033[94m'
