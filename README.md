@@ -1,4 +1,4 @@
-# GPTalk 0.0.1
+# GPTalk
 
 <img src="https://user-images.githubusercontent.com/114559605/213072836-213cd555-68fc-496a-8613-23c8dcf4c06c.png" height="250" width="250">
 
