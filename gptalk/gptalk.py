@@ -16,6 +16,10 @@ import time
 import sys
 if os.name=='nt':
    from pygame import mixer,quit
+   if os.name=="posix":
+      os.system('clear')
+   if os.name=="nt":
+      os.system('cls')
 
 
 
@@ -23,7 +27,11 @@ global ALL_LANGUAGES;ALL_LANGUAGES=[('ar-SA', 'Arabic Saudi Arabia'), ('cs-CZ', 
 
 
 
-
+class apikey():
+    def init(self, APIKEY):
+        APIKEY=self.APIKEY
+        openai.api_key=APIKEY
+global set_APIKEY;set_APIKEY=apikey()
 class bcolors:
     HEADER = '\033[95m'
     OKBLUE = '\033[94m'
@@ -101,10 +109,7 @@ print("-------------------------");print("\n\n\n")
 
 def gptalk(l1,l2):
     
-    if os.name=="posix":
-       os.system('clear')
-    if os.name=="nt":
-       os.system('cls')
+
 
     openai.api_key = os.getenv("OPENAI_API_KEY") 
     
