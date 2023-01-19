@@ -54,8 +54,6 @@ Install GPTalk using PIP: `pip install  gptalk==0.0.4.1`
 
 Upgrade gptalk from time to time with pip install -U so that you always use the updated and bugfixed version.
 
-**partially fixed the installation bug (on Windows) related to PyGame. now pygame WON'T be automatically installed when you install GPTalk, this allows you to install gptalk successfully and use text mode, you can then install pygame separately by yourself if you want to use speech on Windows. If you have not PyGame installed it will cause an error (windows only) when you try to use speech mode**
-
 
 ## USAGE
 
