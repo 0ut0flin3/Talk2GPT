@@ -15,7 +15,7 @@ import os
 import time
 import sys
 if os.name=='nt':
-   from pygame import mixer,quit
+   
    if os.name=="posix":
       os.system('clear')
    if os.name=="nt":
@@ -129,6 +129,11 @@ def gptalk(apik,inpmod,l1,l2,ainame,humanname,temp,max_t):
     if inpmod not in ['speech','text']:
         print("No valid input_mode selected. Available modes: 'text', 'speech'")
     if inpmod=='speech':
+        if os.name=='nt':
+            try:
+                from pygame import mixer,quit
+            except Exception as exxx:
+                print(exxx)
         r = speech_recognition.Recognizer()
         def convert_speech_to_text():
         
