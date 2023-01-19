@@ -1,6 +1,6 @@
 # GPTalk 0.0.4.1 (text + speech)
 
-**Fixed bug for Linux in speech mode. Now speech mode on Linux would works well!**
+**Fixed bug for Linux in speech mode. Now speech mode on Linux should works well!**
 
 **For Windows Users: on Windows is partially fixed an installation bug (on Windows) related to PyGame. now pygame WON'T be automatically installed when you install GPTalk, this allows you to install gptalk without problems and use text mode, THEN you can install pygame (using pip or from source) separately ,by yourself,if you want to use speech on Windows. If you have not PyGame installed it will cause an error (windows only) when you try to use speech mode on gptalk. Work in progress to fix this issue. LINUX/MAC ARE NOT AFFECTED. PYGAME IS NOT REQUIRED FOR LINUX/MAC and speech mode on Linux works well**
 
