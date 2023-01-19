@@ -1,6 +1,6 @@
 # GPTalk 0.0.4.0 (text + speech)
 
-**partially fixed the installation bug (on Windows) related to PyGame. now pygame WON'T be automatically installed when you install GPTalk, this allows you to install gptalk successfully and use text mode, you can then install pygame separately by yourself if you want to use speech on Windows. Ig you have not PyGame installed itwill cause an error if (windows only) when you try to use speech mode**
+**partially fixed the installation bug (on Windows) related to PyGame. now pygame WON'T be automatically installed when you install GPTalk, this allows you to install gptalk successfully and use text mode, you can then install pygame separately by yourself if you want to use speech on Windows. If you have not PyGame installed it will cause an error (windows only) when you try to use speech mode**
 
 <img src="https://user-images.githubusercontent.com/114559605/213072836-213cd555-68fc-496a-8613-23c8dcf4c06c.png" height="250" width="250">
 
@@ -43,7 +43,7 @@ Install GPTalk using PIP: `pip install  gptalk==0.0.4.0`
 
 Upgrade gptalk from time to time with pip install -U so that you always use the updated and bugfixed version.
 
-**partially fixed the installation bug (on Windows) related to PyGame. now pygame WON'T be automatically installed when you install GPTalk, this allows you to install gptalk successfully and use text mode, you can then install pygame separately by yourself if you want to use speech on Windows. Ig you have not PyGame installed itwill cause an error if (windows only) when you try to use speech mode**
+**partially fixed the installation bug (on Windows) related to PyGame. now pygame WON'T be automatically installed when you install GPTalk, this allows you to install gptalk successfully and use text mode, you can then install pygame separately by yourself if you want to use speech on Windows. If you have not PyGame installed it will cause an error (windows only) when you try to use speech mode**
 
 
 ## USAGE
