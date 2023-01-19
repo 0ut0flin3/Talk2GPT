@@ -59,11 +59,13 @@ Upgrade gptalk from time to time with pip install -U so that you always use the 
 
 In addition to communicating with gpt3 using the text or voice it is also possible to define some aspects of its behavior and personal details, as well as those of gpt3, even yours.
 
-Some examples:
+EXAMPLE:
 
 ***>>>***`import gptalk.gptalk as gpt3`
 
 ***>>>***`app = gpt3.CONFIGURE(<YOUR_API_KEY>)`  # OR: app = gpt3.CONFIGURE(os.getenv('OPENAI_API_KEY'))
+
+***>>>***`app.language=<LANGUAGE_TICKER>` # only needed for speech mode really, because text mode automatically will translate if you start chatting in a specific lang
 
 ***>>>***`app.input_mode = "speech"` # OR 'text'
 
