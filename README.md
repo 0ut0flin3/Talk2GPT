@@ -36,11 +36,14 @@ LINUX: `apt install mpg321 python3-dev portaudio19-dev`
 MAC: `brew install mpg321 python3-dev portaudio19-dev` On Mac, portaudio probably needs to be compiled from source....
 
 
-**2)** Have an OpenAI's Api Key  (or you can set it in app or put it inside the OPENAI_API_KEY environment variable.)
+**2)** Have an OpenAI's Api Key  ( you can set it in app or put it inside the OPENAI_API_KEY environment variable.)
 
 
+Should be enough, but if you already have problems in voice detection even after several attempts try these POSSIBLE SOLUTIONS:
 
+on linux: `sudo apt-get python-dev build-essential swig libpulse-dev` ..... then : `sudo pip install pocketsphinx` .... then uninstall and reinstall gptalk
 
+on mac: `brew install swig pulseaudio` ..... then : `sudo pip install pocketsphinx` .... then uninstall and reinstall gptalk
 
 
 
