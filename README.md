@@ -1,4 +1,4 @@
-# GPTalk
+# GPTalk 0.0.3.9 (text + speech)
 
 <img src="https://user-images.githubusercontent.com/114559605/213072836-213cd555-68fc-496a-8613-23c8dcf4c06c.png" height="250" width="250">
 
@@ -35,7 +35,7 @@ Interact with GPT-3 using voice as well as text, in any language and with extend
 
 ## INSTALLATION 
 
-Install GPTalk using PIP: `pip install -U gptalk`
+Install GPTalk using PIP: `pip install  gptalk==0.0.3.9`
 
 Always use `-U` in order to install the latest version available.
 
