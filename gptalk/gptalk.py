@@ -212,17 +212,15 @@ def gptalk(apik,inpmod,l1,l2,ainame,humanname,temp,max_t):
                             myobj.save("answer.mp3")
                             
                             if os.name=="posix":
-                               os.system("mpg321 answer.mp3")
+                               os.system("mpg321 answer.mp3 2>/dev/null")
                             if os.name=="nt":
                                mixer.init()
                                mixer.music.load("answer.mp3")
-                            
                                mixer.music.play()
-                            while mixer.music.get_busy():
-                                    pass
-                            quit()
-                            
-                            os.remove('answer.mp3')
+                               while mixer.music.get_busy():
+                                     pass
+                               quit()
+                               os.remove('answer.mp3')
 
 
                             
@@ -287,5 +285,3 @@ def gptalk(apik,inpmod,l1,l2,ainame,humanname,temp,max_t):
             ff.close()
             print(bcolors.HEADER+ainame+": "+bcolors.ENDC+response.choices[0].text)
             print("\n\n["+str(t2-t1)[:4]+" seconds]\n\n")
-
-

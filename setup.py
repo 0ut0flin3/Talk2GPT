@@ -1,6 +1,6 @@
 import setuptools
 setuptools.setup(name='GPTalk',
-    version='0.0.4.0',
+    version='0.0.4.1',
     author='0ut0flin3',
     description='Interact with GPT-3 using voice as well as text, in any language and with extended features',
     packages=setuptools.find_packages(),

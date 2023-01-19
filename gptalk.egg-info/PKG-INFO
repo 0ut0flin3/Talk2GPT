@@ -1,12 +1,12 @@
 Metadata-Version: 2.1
 Name: gptalk
-Version: 0.0.4.0
+Version: 0.0.4.1
 Summary: Interact with GPT-3 using voice as well as text, in any language and with extended features
 Author: 0ut0flin3
 Author-email: 0ut0flin3 <0ut0flin3@protonmail.com>
 License: MIT License
         
-        Copyright (c) 2022 0ut0flin3
+        Copyright (c) 2023 0ut0flin3
         
         Permission is hereby granted, free of charge, to any person obtaining a copy
         of this software and associated documentation files (the "Software"), to deal
@@ -72,7 +72,7 @@ Interact with GPT-3 using voice as well as text, in any language and with extend
 
 ## INSTALLATION 
 
-Install GPTalk using PIP: `pip install gptalk 0.0.4.0`
+Install GPTalk using PIP: `pip install gptalk 0.0.4.1`
 
 Upgrade gptalk from time to time with pip install -U so that you always use the updated and bugfixed version.
 

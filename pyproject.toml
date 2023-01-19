@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "gptalk"
-version = "0.0.4.0"
+version = "0.0.4.1"
 description = "Interact with GPT-3 using voice as well as text, in any language and with extended features"
 readme = "README.md"
 authors = [{ name = "0ut0flin3", email = "0ut0flin3@protonmail.com" }]
