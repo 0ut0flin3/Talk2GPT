@@ -57,9 +57,9 @@ Upgrade gptalk from time to time with pip install -U so that you always use the 
 
 ## USAGE
 
-In addition to communicating with gpt3 using the text or voice it is also possible to define some aspects of its behavior and personal details, as well as those of gpt3, even yours.
+In addition to interact with GPT-3 using the text or speech, it is also possible to define some aspects of its behavior and personal details, as well as yours.
 
-EXAMPLE:
+BASIC USAGE EXAMPLE:
 
 ***>>>***`import gptalk.gptalk as gpt3`
 
@@ -90,10 +90,10 @@ and,then, run the app:
 
 ***>>>***`app.run()`
 
-Start talking ( or typing, depending by the mode you choose) ... As for 'speech mode', gpt-3  should respond in a moment, but several factors can influence (try more times if you fail, move closer to the microphone)
+Start talking ( or typing, depending by the mode you choose) ... As for 'speech mode', gpt-3  should respond in seconds, but several factors can influence (try more times if you fail, move closer to the microphone)
 
 
-Say `goodbye` to quit.
+Say `goodbye` or `go to sleep` to quit.
 
 AVAILABLE PARAMETERS  : `AI_NAME`, `AI_AGE`, `AI_HOBBIES`,` AI_GENRE`, `AI_MOOD`, `AI_SPECIES` , `HUMAN_NAME`, `HUMAN_AGE`, `HUMAN_HOBBIES`,` HUMAN_GENRE`, `HUMAN_MOOD`, `HUMAN_SPECIES`
 
