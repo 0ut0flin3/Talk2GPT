@@ -43,15 +43,16 @@ Upgrade gptalk from time to time with pip install -U so that you always use the 
 
 
 ## USAGE
-**[[TEXT MODE (SAME AS CHATGPT BUT WITH MORE FEATURES)WILL BE ADDED WITH THE NEXT UPDATE IN THE NEXT FEW HOURS]]**
 
-In addition to communicating with gpt3 using the voice it is also possible to define some aspects of its behavior and personal details, as well as those of gpt3, even yours.
+In addition to communicating with gpt3 using the text or voice it is also possible to define some aspects of its behavior and personal details, as well as those of gpt3, even yours.
 
 Some examples:
 
 ***>>>***`import gptalk.gptalk as gpt3`
 
-***>>>***`app = gpt3.CONFIGURE()`
+***>>>***`app = gpt3.CONFIGURE(<YOUR_API_KEY>)`  # OR: app = gpt3.CONFIGURE(os.getenv('OPENAI_API_KEY'))
+
+***>>>***`app.input_mode = "speech"` # OR 'text'
 
 ***>>>***`app.AI_NAME = "Alice"`
 
@@ -63,6 +64,8 @@ Some examples:
 
 ***>>>***`app.AI_MOOD = "happy"`
 
+***>>>***`app.AI_SPECIES = "human"`
+
 then, save:
 
 
@@ -72,7 +75,7 @@ and,then, run the app:
 
 ***>>>***`app.run()`
 
-Start talking... gpt-3  should respond in a moment, but several factors can influence (try more times if you fail, move closer to the microphone)
+Start talking ( or typing, depending by the mode you choose) ... As for 'speech mode', gpt-3  should respond in a moment, but several factors can influence (try more times if you fail, move closer to the microphone)
 
 
 Say `goodbye` to quit.
