@@ -29,7 +29,7 @@ Interact with GPT-3 using voice as well as text, in any language and with extend
 
 -In order to use GPTalk you need :
 
-**1)**  If you are on Linux\MAC you must **install mpg321 (a mp3 player), python3-dev and portaudio19-dev**
+**1)**  Install the following libraries only if you are on Linux\MAC:
 
 LINUX: `apt install mpg321 python3-dev portaudio19-dev` 
 
