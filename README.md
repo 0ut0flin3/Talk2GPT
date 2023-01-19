@@ -82,7 +82,7 @@ Some examples:
 then, save:
 
 
-***>>>***`app.save() #will create a memories.json file in the same folder that will also store and remember previous conversations.Every time you run save(), memories.json will be replaced with new. You can just run directly run() in the next step to use already existent`
+***>>>***`app.save() #will create a memories.json file in the same folder that will store the informations you set in the previous step. will also store and remember conversations with gpt3.Every time you run save(),already existent memories.json will be replaced with new. You can just run directly run() in the next step to use already existent. You can also create your own empty memories.json that mjust contains at least two brackets {} , (must NOT be fully empty)`
 
 and,then, run the app:
 
