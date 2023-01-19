@@ -27,7 +27,7 @@ Interact with GPT-3 using voice as well as text, in any language and with extend
 
 Python version NOT HIGHER THAN 3.10
 
--have your OpenAI's Api key inside the OPENAI_API_KEY environment variable.
+-have your OpenAI's Api key inside the OPENAI_API_KEY environment variable. (or you can also set it in app)
 
 
 -install `mpg321` (a mp3 player for linux) only if you are on Linux.
