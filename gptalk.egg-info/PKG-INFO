@@ -1,7 +1,7 @@
 Metadata-Version: 2.1
 Name: gptalk
-Version: 0.0.3.8
-Summary: Interact with GPT-3 using your voice instead of text, in any language
+Version: 0.0.3.9
+Summary: Interact with GPT-3 using voice as well as text, in any language and with extended features
 Author: 0ut0flin3
 Author-email: 0ut0flin3 <0ut0flin3@protonmail.com>
 License: MIT License
@@ -42,8 +42,7 @@ License-File: LICENSE.md
 
 **[JOIN DISCORD](https://discord.gg/mettNtATzW)** **|** **[TWITTER](https://twitter.com/gptalk1)** **|** **[DONATE](https://github.com/0ut0flin3/GPTalk#donate)**
 
-Interact with GPT-3 using your voice instead of text, in any language.
-
+Interact with GPT-3 using voice as well as text, in any language and with extended features
 
 
 
@@ -65,10 +64,13 @@ Interact with GPT-3 using your voice instead of text, in any language.
 
 -have your OpenAI's Api key inside the OPENAI_API_KEY environment variable.
 
+
 -install `mpg321` (a mp3 player for linux) only if you are on Linux.
 
 
-## INSTALLATION
+
+
+## INSTALLATION 
 
 Install GPTalk using PIP: `pip install -U gptalk`
 
@@ -76,30 +78,52 @@ Always use `-U` in order to install the latest version available.
 
 Upgrade gptalk from time to time with pip install -U so that you always use the updated and bugfixed version.
 
+
 ## USAGE
+
+In addition to communicating with gpt3 using the text or voice it is also possible to define some aspects of its behavior and personal details, as well as those of gpt3, even yours.
 
 Some examples:
 
-***>>>***`import gptalk`
+***>>>***`import gptalk.gptalk as gpt3`
 
-***>>>***`app = gptalk.CONFIGURE()`
+***>>>***`app = gpt3.CONFIGURE(<YOUR_API_KEY>)`  # OR: app = gpt3.CONFIGURE(os.getenv('OPENAI_API_KEY'))
+
+***>>>***`app.input_mode = "speech"` # OR 'text'
 
 ***>>>***`app.AI_NAME = "Alice"`
 
+***>>>***`app.HUMAN_NAME = "Bob"`
+
 ***>>>***`app.AI_GENRE = "female"`
 
-***>>>***`app.save() #will create a memories.json file in the same folder. Will be replaced every time you run this command`
+***>>>***`app.AI_AGE = "32"`
+
+***>>>***`app.AI_MOOD = "happy"`
+
+***>>>***`app.AI_SPECIES = "human"`
+
+then, save:
+
+
+***>>>***`app.save() #will create a memories.json file in the same folder that will also store and remember previous conversations.Every time you run save(), memories.json will be replaced with new. You can just run directly run() in the next step to use already existent`
+
+and,then, run the app:
 
 ***>>>***`app.run()`
 
-Start talking.
+Start talking ( or typing, depending by the mode you choose) ... As for 'speech mode', gpt-3  should respond in a moment, but several factors can influence (try more times if you fail, move closer to the microphone)
+
 
 Say `goodbye` to quit.
 
-Set language with `app.language=<LANGUAGE_TICKER>`
+AVAILABLE PARAMETERS  : `AI_NAME`, `AI_AGE`, `AI_HOBBIES`,` AI_GENRE`, `AI_MOOD`, `AI_SPECIES` , `HUMAN_NAME`, `HUMAN_AGE`, `HUMAN_HOBBIES`,` HUMAN_GENRE`, `HUMAN_MOOD`, `HUMAN_SPECIES`
 
 
-More examples on the GPTalk Discord Server >> https://discord.gg/mettNtATzW
+If you want change speech language (en-US is default) use `app.language=<LANGUAGE_TICKER>` (before run)
+
+
+Give a feedback, positive or negative,it's very apprecciated >> https://discord.gg/mettNtATzW
 
 
 
@@ -145,10 +169,7 @@ zh-HK Chinese Hong Kong
 zh-TW Chinese Taiwan
 ```
 
-### memories.json : 
-Initially it is empty, every question and answer given with the AI is added to the file and every time the speeches are added to the prompt automatically
-so it will remember what you said.
-**IF YOU WANT TO RESET THE MEMORY JUST OVERWRITE ALL THE CONTENT OF THE FILE WITH `{}` (so it must not be completely empty but contain `{}` otherwise it will cause an error)**
+
 
 
 ## DONATE
