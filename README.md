@@ -1,4 +1,6 @@
-# GPTalk 0.0.3.9 (text + speech)
+# GPTalk 0.0.4.0 (text + speech)
+
+**fixed the installation bug related to pygame. now pygame won't be automatically installed when you use pip, this allows you to install gptalk successfully, you can install pygame separately if you want to use speech*
 
 <img src="https://user-images.githubusercontent.com/114559605/213072836-213cd555-68fc-496a-8613-23c8dcf4c06c.png" height="250" width="250">
 
