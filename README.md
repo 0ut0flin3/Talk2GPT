@@ -27,7 +27,6 @@ Interact with GPT-3 using voice as well as text, in any language and with extend
 
 -In order to use GPTalk you need to :
 
-Python version NOT HIGHER THAN 3.10
 
 -have your OpenAI's Api key inside the OPENAI_API_KEY environment variable. (or you can also set it in app)
 
@@ -39,7 +38,7 @@ Python version NOT HIGHER THAN 3.10
 
 ## INSTALLATION 
 
-Install GPTalk using PIP: `pip install  gptalk==0.0.3.9`
+Install GPTalk using PIP: `pip install  gptalk==0.0.4.0`
 
 
 Upgrade gptalk from time to time with pip install -U so that you always use the updated and bugfixed version.
