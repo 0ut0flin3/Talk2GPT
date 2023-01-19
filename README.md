@@ -33,7 +33,7 @@ Interact with GPT-3 using voice as well as text, in any language and with extend
 
 LINUX: `apt install mpg321 python3-dev portaudio19-dev` 
 
-MAC: `brew install mpg321 python3-dev portaudio19-dev` On Mac, portaudio probably needs to be compiled from source....
+MAC: `brew install mpg321 portaudio` On Mac, portaudio probably needs to be compiled from source....
 
 
 **2)** Have an OpenAI's Api Key  ( you can set it in app or put it inside the OPENAI_API_KEY environment variable.)
