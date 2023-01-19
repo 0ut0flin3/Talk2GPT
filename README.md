@@ -49,7 +49,7 @@ on mac: `brew install swig pulseaudio` ..... then : `sudo pip install pocketsphi
 
 ## INSTALLATION 
 
-Install GPTalk using PIP: `pip install  gptalk==0.0.4.0`
+Install GPTalk using PIP: `pip install  gptalk==0.0.4.1`
 
 
 Upgrade gptalk from time to time with pip install -U so that you always use the updated and bugfixed version.
