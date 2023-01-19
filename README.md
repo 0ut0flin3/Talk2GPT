@@ -29,13 +29,17 @@ Interact with GPT-3 using voice as well as text, in any language and with extend
 
 -In order to use GPTalk you need :
 
-If you are on Linux\MAC you must **install python3-dev and portaudio-dev** -> `sudo apt install python3-dev portaudio19-dev`
-On Mac portaudio probably needs to be compiled from source....
+**1)**  If you are on Linux\MAC you must **install mpg321 (a mp3 player), python3-dev and portaudio19-dev**
 
--have your OpenAI's Api key inside the OPENAI_API_KEY environment variable. (or you can also set it in app)
+LINUX: `apt install mpg321 python3-dev portaudio19-dev` 
+
+MAC: `brew install mpg321 python3-dev portaudio19-dev` On Mac, portaudio probably needs to be compiled from source....
 
 
--install `mpg321` (a mp3 player for linux) only if you are on Linux.
+**2)** Have an OpenAI's Api Key  (or you can set it in app or put it inside the OPENAI_API_KEY environment variable.)
+
+
+
 
 
 
