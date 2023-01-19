@@ -43,6 +43,7 @@ Upgrade gptalk from time to time with pip install -U so that you always use the 
 
 
 ## USAGE
+**[[TEXT MODE (SAME AS CHATGPT BUT WITH MORE FEATURES)WILL BE ADDED WITH THE NEXT UPDATE IN THE NEXT FEW HOURS]]**
 
 In addition to communicating with gpt3 using the voice it is also possible to define some aspects of its behavior and personal details, as well as those of gpt3, even yours.
 
