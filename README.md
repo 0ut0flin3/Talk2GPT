@@ -1,8 +1,7 @@
-# GPTalk 0.0.4.1 (text + speech)
+# GPTalk 0.0.4.2 (text + speech)
 
-**Fixed bug for Linux in speech mode. Now speech mode on Linux should works well!**
-
-**For Windows Users: next update will make speech mode works on Windows too.**
+**Now speech mode works great on Windows too**
+**Added more languages to the list**
 
 <img src="https://user-images.githubusercontent.com/114559605/213072836-213cd555-68fc-496a-8613-23c8dcf4c06c.png" height="250" width="250">
 
@@ -49,7 +48,7 @@ on mac: `brew install swig pulseaudio` ..... then : `sudo pip install pocketsphi
 
 ## INSTALLATION 
 
-Install GPTalk using PIP: `pip install  gptalk==0.0.4.1`
+Install GPTalk using PIP: `pip install  gptalk==0.0.4.2`
 
 
 Upgrade gptalk from time to time with pip install -U so that you always use the updated and bugfixed version.
@@ -108,43 +107,166 @@ Give a feedback, positive or negative,it's very apprecciated >> https://discord.
 ## LANGUAGES
 
 ```
-ar-SA Arabic Saudi Arabia
-cs-CZ Czech Czech Republic
-da-DK Danish Denmark
-de-DE German Germany
-el-GR Modern Greek Greece
-en-AU English Australia
-en-GB English United Kingdom
-en-IE English Ireland
-en-US English United States
-en-ZA English South Africa
-es-ES Spanish Spain
-es-MX Spanish Mexico
-fi-FI Finnish Finland
-fr-CA French Canada
-fr-FR French France
-he-IL Hebrew Israel
-hi-IN Hindi India
-hu-HU Hungarian Hungary
-id-ID Indonesian Indonesia
-it-IT Italian Italy
-ja-JP Japanese Japan
-ko-KR Korean Republic of Korea
-nl-BE Dutch Belgium
-nl-NL Dutch Netherlands
-no-NO Norwegian Norway
-pl-PL Polish Poland
-pt-BR Portuguese Brazil
-pt-PT Portuguese Portugal
-ro-RO Romanian Romania
-ru-RU Russian Russian Federation
-sk-SK Slovak Slovakia
-sv-SE Swedish Sweden
-th-TH Thai Thailand
-tr-TR Turkish Turkey
-zh-CN Chinese China
-zh-HK Chinese Hong Kong
-zh-TW Chinese Taiwan
+af-ZA   Afrikaans (South Africa)
+ar-AE   Arabic (U.A.E.)
+ar-BH   Arabic (Bahrain)
+ar-DZ   Arabic (Algeria)
+ar-EG   Arabic (Egypt)
+ar-IQ   Arabic (Iraq)
+ar-JO   Arabic (Jordan)
+ar-KW   Arabic (Kuwait)
+ar-LB   Arabic (Lebanon)
+ar-LY   Arabic (Libya)
+ar-MA   Arabic (Morocco)
+ar-OM   Arabic (Oman)
+ar-QA   Arabic (Qatar)
+ar-SA   Arabic (Saudi Arabia)
+ar-SY   Arabic (Syria)
+ar-TN   Arabic (Tunisia)
+ar-YE   Arabic (Yemen)
+az-AZ   Azeri (Latin) (Azerbaijan)
+az-AZ   Azeri (Cyrillic) (Azerbaijan)
+be-BY   Belarusian (Belarus)
+bg-BG   Bulgarian (Bulgaria)
+bs-BA   Bosnian (Bosnia and Herzegovina)
+ca-ES   Catalan (Spain)
+cs-CZ   Czech (Czech Republic)
+cy-GB   Welsh (United Kingdom)
+da-DK   Danish (Denmark)
+de-AT   German (Austria)
+de-CH   German (Switzerland)
+de-DE   German (Germany)
+de-LI   German (Liechtenstein)
+de-LU   German (Luxembourg)
+dv-MV   Divehi (Maldives)
+el-GR   Greek (Greece)
+en-AU   English (Australia)
+en-BZ   English (Belize)
+en-CA   English (Canada)
+en-CB   English (Caribbean)
+en-GB   English (United Kingdom)
+en-IE   English (Ireland)
+en-JM   English (Jamaica)
+en-NZ   English (New Zealand)
+en-PH   English (Republic of the Philippines)
+en-TT   English (Trinidad and Tobago)
+en-US   English (United States)
+en-ZA   English (South Africa)
+en-ZW   English (Zimbabwe)
+es-AR   Spanish (Argentina)
+es-BO   Spanish (Bolivia)
+es-CL   Spanish (Chile)
+es-CO   Spanish (Colombia)
+es-CR   Spanish (Costa Rica)
+es-DO   Spanish (Dominican Republic)
+es-EC   Spanish (Ecuador)
+es-ES   Spanish (Castilian)
+es-ES   Spanish (Spain)
+es-GT   Spanish (Guatemala)
+es-HN   Spanish (Honduras)
+es-MX   Spanish (Mexico)
+es-NI   Spanish (Nicaragua)
+es-PA   Spanish (Panama)
+es-PE   Spanish (Peru)
+es-PR   Spanish (Puerto Rico)
+es-PY   Spanish (Paraguay)
+es-SV   Spanish (El Salvador)
+es-UY   Spanish (Uruguay)
+es-VE   Spanish (Venezuela)
+et-EE   Estonian (Estonia)
+eu-ES   Basque (Spain)
+fa-IR   Farsi (Iran)
+fi-FI   Finnish (Finland)
+fo-FO   Faroese (Faroe Islands)
+fr-BE   French (Belgium)
+fr-CA   French (Canada)
+fr-CH   French (Switzerland)
+fr-FR   French (France)
+fr-LU   French (Luxembourg)
+fr-MC   French (Principality of Monaco)
+gl-ES   Galician (Spain)
+gu-IN   Gujarati (India)
+he-IL   Hebrew (Israel)
+hi-IN   Hindi (India)
+hr-BA   Croatian (Bosnia and Herzegovina)
+hr-HR   Croatian (Croatia)
+hu-HU   Hungarian (Hungary)
+hy-AM   Armenian (Armenia)
+id-ID   Indonesian (Indonesia)
+is-IS   Icelandic (Iceland)
+it-CH   Italian (Switzerland)
+it-IT   Italian (Italy)
+ja-JP   Japanese (Japan)
+ka-GE   Georgian (Georgia)
+kk-KZ   Kazakh (Kazakhstan)
+kn-IN   Kannada (India)
+ko-KR   Korean (Korea)
+kok-IN  Konkani (India)
+ky-KG   Kyrgyz (Kyrgyzstan)
+lt-LT   Lithuanian (Lithuania)
+lv-LV   Latvian (Latvia)
+mi-NZ   Maori (New Zealand)
+mk-MK   FYRO Macedonian (Former Yugoslav Republic of Macedonia)
+mn-MN   Mongolian (Mongolia)
+mr-IN   Marathi (India)
+ms-BN   Malay (Brunei Darussalam)
+ms-MY   Malay (Malaysia)
+mt-MT   Maltese (Malta)
+nb-NO   Norwegian (Bokm?l) (Norway)
+nl-BE   Dutch (Belgium)
+nl-NL   Dutch (Netherlands)
+nn-NO   Norwegian (Nynorsk) (Norway)
+ns-ZA   Northern Sotho (South Africa)
+pa-IN   Punjabi (India)
+pl-PL   Polish (Poland)
+ps-AR   Pashto (Afghanistan)
+pt-BR   Portuguese (Brazil)
+pt-PT   Portuguese (Portugal)
+qu-BO   Quechua (Bolivia)
+qu-EC   Quechua (Ecuador)
+qu-PE   Quechua (Peru)
+ro-RO   Romanian (Romania)
+ru-RU   Russian (Russia)
+sa-IN   Sanskrit (India)
+se-FI   Sami (Northern) (Finland)
+se-FI   Sami (Skolt) (Finland)
+se-FI   Sami (Inari) (Finland)
+se-NO   Sami (Northern) (Norway)
+se-NO   Sami (Lule) (Norway)
+se-NO   Sami (Southern) (Norway)
+se-SE   Sami (Northern) (Sweden)
+se-SE   Sami (Lule) (Sweden)
+se-SE   Sami (Southern) (Sweden)
+sk-SK   Slovak (Slovakia)
+sl-SI   Slovenian (Slovenia)
+sq-AL   Albanian (Albania)
+sr-BA   Serbian (Latin) (Bosnia and Herzegovina)
+sr-BA   Serbian (Cyrillic) (Bosnia and Herzegovina)
+sr-SP   Serbian (Latin) (Serbia and Montenegro)
+sr-SP   Serbian (Cyrillic) (Serbia and Montenegro)
+sv-FI   Swedish (Finland)
+sv-SE   Swedish (Sweden)
+sw-KE   Swahili (Kenya)
+syr-SY  Syriac (Syria)
+ta-IN   Tamil (India)
+te-IN   Telugu (India)
+th-TH   Thai (Thailand)
+tl-PH   Tagalog (Philippines)
+tn-ZA   Tswana (South Africa)
+tr-TR   Turkish (Turkey)
+tt-RU   Tatar (Russia)
+uk-UA   Ukrainian (Ukraine)
+ur-PK   Urdu (Islamic Republic of Pakistan)
+uz-UZ   Uzbek (Latin) (Uzbekistan)
+uz-UZ   Uzbek (Cyrillic) (Uzbekistan)
+vi-VN   Vietnamese (Viet Nam)
+xh-ZA   Xhosa (South Africa)
+zh-CN   Chinese (S)
+zh-HK   Chinese (Hong Kong)
+zh-MO   Chinese (Macau)
+zh-SG   Chinese (Singapore)
+zh-TW   Chinese (T)
+zu-ZA   Zulu (South Africa)
 ```
 
 

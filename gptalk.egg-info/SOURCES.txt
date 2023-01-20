@@ -1,6 +1,7 @@
 LICENSE.md
 README.md
 pyproject.toml
+requirements.txt
 setup.py
 gptalk/__init__.py
 gptalk/gptalk.py
