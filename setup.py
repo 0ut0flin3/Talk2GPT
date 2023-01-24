@@ -1,13 +1,13 @@
 import setuptools
 setuptools.setup(name='GPTalk',
-    version='0.0.4.3',
+    version='0.0.4.4',
     author='0ut0flin3',
     description='Fast GPT-3 client for Windows and Unix that supports both text and speech in any language.',
     packages=setuptools.find_packages(),
     include_package_data=True,
     classifiers=[
         'Programming Language :: Python :: 3',
-        'License :: OSI Approved :: MIT License',
+        'License :: OSI Approved :: Apache Software License',
         'Operating System :: OS Independent',
         
                 ],

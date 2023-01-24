@@ -4,17 +4,17 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "gptalk"
-version = "0.0.4.3"
+version = "0.0.4.4"
 description = "Fast GPT-3 client for Windows and Unix that supports both text and speech in any language."
 readme = "README.md"
 authors = [{ name = "0ut0flin3", email = "0ut0flin3@protonmail.com" }]
 license = { file = "LICENSE.md" }
 classifiers = [
-    "License :: OSI Approved :: MIT License",
+    "License :: OSI Approved :: Apache Software License",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
 ]
-keywords = ["speech-recognition","tts","gpt3","chatgpt","speech-to-text","ai"]
+keywords = ["speech-recognition","tts","gpt-3","chatgpt","speech-to-text","ai","dall-e"]
 requires-python = ">=3"
 dynamic = ["dependencies"]
 
@@ -24,3 +24,7 @@ dependencies = {file = ["requirements.txt"]}
 
 [project.urls]
 Homepage = "https://github.com/0ut0flin3/gptalk"
+
+
+[project.optional-dependencies]
+dall_e = ["Pillow"]
