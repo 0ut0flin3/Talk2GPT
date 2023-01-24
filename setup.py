@@ -1,8 +1,8 @@
 import setuptools
 setuptools.setup(name='GPTalk',
-    version='0.0.4.2',
+    version='0.0.4.3',
     author='0ut0flin3',
-    description='Interact with GPT-3 using voice as well as text, in any language and with extended features',
+    description='Fast GPT-3 client for Windows and Unix that supports both text and speech in any language.',
     packages=setuptools.find_packages(),
     include_package_data=True,
     classifiers=[

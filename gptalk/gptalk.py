@@ -144,13 +144,11 @@ if os.name=='nt':
 
 
 global ALL_LANGUAGES;ALL_LANGUAGES=[('af-ZA', 'Afrikaans (South Africa)'), ('ar-AE', 'Arabic (U.A.E.)'), ('ar-BH', 'Arabic (Bahrain)'), ('ar-DZ', 'Arabic (Algeria)'), ('ar-EG', 'Arabic (Egypt)'), ('ar-IQ', 'Arabic (Iraq)'), ('ar-JO', 'Arabic (Jordan)'), ('ar-KW', 'Arabic (Kuwait)'), ('ar-LB', 'Arabic (Lebanon)'), ('ar-LY', 'Arabic (Libya)'), ('ar-MA', 'Arabic (Morocco)'), ('ar-OM', 'Arabic (Oman)'), ('ar-QA', 'Arabic (Qatar)'), ('ar-SA', 'Arabic (Saudi Arabia)'), ('ar-SY', 'Arabic (Syria)'), ('ar-TN', 'Arabic (Tunisia)'), ('ar-YE', 'Arabic (Yemen)'), ('az-AZ', 'Azeri (Latin) (Azerbaijan)'), ('az-AZ', 'Azeri (Cyrillic) (Azerbaijan)'), ('be-BY', 'Belarusian (Belarus)'), ('bg-BG', 'Bulgarian (Bulgaria)'), ('bs-BA', 'Bosnian (Bosnia and Herzegovina)'), ('ca-ES', 'Catalan (Spain)'), ('cs-CZ', 'Czech (Czech Republic)'), ('cy-GB', 'Welsh (United Kingdom)'), ('da-DK', 'Danish (Denmark)'), ('de-AT', 'German (Austria)'), ('de-CH', 'German (Switzerland)'), ('de-DE', 'German (Germany)'), ('de-LI', 'German (Liechtenstein)'), ('de-LU', 'German (Luxembourg)'), ('dv-MV', 'Divehi (Maldives)'), ('el-GR', 'Greek (Greece)'), ('en-AU', 'English (Australia)'), ('en-BZ', 'English (Belize)'), ('en-CA', 'English (Canada)'), ('en-CB', 'English (Caribbean)'), ('en-GB', 'English (United Kingdom)'), ('en-IE', 'English (Ireland)'), ('en-JM', 'English (Jamaica)'), ('en-NZ', 'English (New Zealand)'), ('en-PH', 'English (Republic of the Philippines)'), ('en-TT', 'English (Trinidad and Tobago)'), ('en-US', 'English (United States)'), ('en-ZA', 'English (South Africa)'), ('en-ZW', 'English (Zimbabwe)'), ('es-AR', 'Spanish (Argentina)'), ('es-BO', 'Spanish (Bolivia)'), ('es-CL', 'Spanish (Chile)'), ('es-CO', 'Spanish (Colombia)'), ('es-CR', 'Spanish (Costa Rica)'), ('es-DO', 'Spanish (Dominican Republic)'), ('es-EC', 'Spanish (Ecuador)'), ('es-ES', 'Spanish (Castilian)'), ('es-ES', 'Spanish (Spain)'), ('es-GT', 'Spanish (Guatemala)'), ('es-HN', 'Spanish (Honduras)'), ('es-MX', 'Spanish (Mexico)'), ('es-NI', 'Spanish (Nicaragua)'), ('es-PA', 'Spanish (Panama)'), ('es-PE', 'Spanish (Peru)'), ('es-PR', 'Spanish (Puerto Rico)'), ('es-PY', 'Spanish (Paraguay)'), ('es-SV', 'Spanish (El Salvador)'), ('es-UY', 'Spanish (Uruguay)'), ('es-VE', 'Spanish (Venezuela)'), ('et-EE', 'Estonian (Estonia)'), ('eu-ES', 'Basque (Spain)'), ('fa-IR', 'Farsi (Iran)'), ('fi-FI', 'Finnish (Finland)'), ('fo-FO', 'Faroese (Faroe Islands)'), ('fr-BE', 'French (Belgium)'), ('fr-CA', 'French (Canada)'), ('fr-CH', 'French (Switzerland)'), ('fr-FR', 'French (France)'), ('fr-LU', 'French (Luxembourg)'), ('fr-MC', 'French (Principality of Monaco)'), ('gl-ES', 'Galician (Spain)'), ('gu-IN', 'Gujarati (India)'), ('he-IL', 'Hebrew (Israel)'), ('hi-IN', 'Hindi (India)'), ('hr-BA', 'Croatian (Bosnia and Herzegovina)'), ('hr-HR', 'Croatian (Croatia)'), ('hu-HU', 'Hungarian (Hungary)'), ('hy-AM', 'Armenian (Armenia)'), ('id-ID', 'Indonesian (Indonesia)'), ('is-IS', 'Icelandic (Iceland)'), ('it-CH', 'Italian (Switzerland)'), ('it-IT', 'Italian (Italy)'), ('ja-JP', 'Japanese (Japan)'), ('ka-GE', 'Georgian (Georgia)'), ('kk-KZ', 'Kazakh (Kazakhstan)'), ('kn-IN', 'Kannada (India)'), ('ko-KR', 'Korean (Korea)'), ('kok-IN', 'Konkani (India)'), ('ky-KG', 'Kyrgyz (Kyrgyzstan)'), ('lt-LT', 'Lithuanian (Lithuania)'), ('lv-LV', 'Latvian (Latvia)'), ('mi-NZ', 'Maori (New Zealand)'), ('mk-MK', 'FYRO Macedonian (Former Yugoslav Republic of Macedonia)'), ('mn-MN', 'Mongolian (Mongolia)'), ('mr-IN', 'Marathi (India)'), ('ms-BN', 'Malay (Brunei Darussalam)'), ('ms-MY', 'Malay (Malaysia)'), ('mt-MT', 'Maltese (Malta)'), ('nb-NO', 'Norwegian (Bokm?l) (Norway)'), ('nl-BE', 'Dutch (Belgium)'), ('nl-NL', 'Dutch (Netherlands)'), ('nn-NO', 'Norwegian (Nynorsk) (Norway)'), ('ns-ZA', 'Northern Sotho (South Africa)'), ('pa-IN', 'Punjabi (India)'), ('pl-PL', 'Polish (Poland)'), ('ps-AR', 'Pashto (Afghanistan)'), ('pt-BR', 'Portuguese (Brazil)'), ('pt-PT', 'Portuguese (Portugal)'), ('qu-BO', 'Quechua (Bolivia)'), ('qu-EC', 'Quechua (Ecuador)'), ('qu-PE', 'Quechua (Peru)'), ('ro-RO', 'Romanian (Romania)'), ('ru-RU', 'Russian (Russia)'), ('sa-IN', 'Sanskrit (India)'), ('se-FI', 'Sami (Northern) (Finland)'), ('se-FI', 'Sami (Skolt) (Finland)'), ('se-FI', 'Sami (Inari) (Finland)'), ('se-NO', 'Sami (Northern) (Norway)'), ('se-NO', 'Sami (Lule) (Norway)'), ('se-NO', 'Sami (Southern) (Norway)'), ('se-SE', 'Sami (Northern) (Sweden)'), ('se-SE', 'Sami (Lule) (Sweden)'), ('se-SE', 'Sami (Southern) (Sweden)'), ('sk-SK', 'Slovak (Slovakia)'), ('sl-SI', 'Slovenian (Slovenia)'), ('sq-AL', 'Albanian (Albania)'), ('sr-BA', 'Serbian (Latin) (Bosnia and Herzegovina)'), ('sr-BA', 'Serbian (Cyrillic) (Bosnia and Herzegovina)'), ('sr-SP', 'Serbian (Latin) (Serbia and Montenegro)'), ('sr-SP', 'Serbian (Cyrillic) (Serbia and Montenegro)'), ('sv-FI', 'Swedish (Finland)'), ('sv-SE', 'Swedish (Sweden)'), ('sw-KE', 'Swahili (Kenya)'), ('syr-SY', 'Syriac (Syria)'), ('ta-IN', 'Tamil (India)'), ('te-IN', 'Telugu (India)'), ('th-TH', 'Thai (Thailand)'), ('tl-PH', 'Tagalog (Philippines)'), ('tn-ZA', 'Tswana (South Africa)'), ('tr-TR', 'Turkish (Turkey)'), ('tt-RU', 'Tatar (Russia)'), ('uk-UA', 'Ukrainian (Ukraine)'), ('ur-PK', 'Urdu (Islamic Republic of Pakistan)'), ('uz-UZ', 'Uzbek (Latin) (Uzbekistan)'), ('uz-UZ', 'Uzbek (Cyrillic) (Uzbekistan)'), ('vi-VN', 'Vietnamese (Viet Nam)'), ('xh-ZA', 'Xhosa (South Africa)'), ('zh-CN', 'Chinese (S)'), ('zh-HK', 'Chinese (Hong Kong)'), ('zh-MO', 'Chinese (Macau)'), ('zh-SG', 'Chinese (Singapore)'), ('zh-TW', 'Chinese (T)'), ('zu-ZA', 'Zulu (South Africa)')]
+global IMAGE_MODE;IMAGE_MODE=False
+global img_in_console;img_in_console=False    
 
+#global SHOW_IMAGE_IN_CONSOLE;SHOW_IMAGE_IN_CONSOLE=False
 
-class apikey():
-    def init(self, APIKEY):
-        APIKEY=self.APIKEY
-        openai.api_key=APIKEY
-global set_APIKEY;set_APIKEY=apikey()
 class bcolors:
     HEADER = '\033[95m'
     OKBLUE = '\033[94m'
@@ -161,9 +159,33 @@ class bcolors:
     ENDC = '\033[0m'
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
+
+    
+        
+
+def dall_e(text,size="512x512"):
+    global SHOW_IMAGE_IN_CONSOLE
+    import requests
+    global URL
+    if os.path.isdir("generated_images") == False:
+        os.mkdir("generated_images")
+    if size not in ['256x256', '512x512', '1024x1024']:
+        print(f"Image size {size} is not valid. Image can only be one of these: ['256x256', '512x512', '1024x1024']")
+    try:
+        response=openai.Image.create(prompt=text,n=1,size=size)
+        URL=response.data[0].url
+    except Exception as ex:
+           print(ex)
+    
+    img_name=str(time.time())+".png"
+    r=requests.get(URL)
+    img_full_path="generated_images/"+img_name
+    open(img_full_path,"wb").write(r.content)
+    
+    return img_full_path
 global EXIT;EXIT=['exit','quit','goodbye','exit now','go to sleep','shutdown','go for a walk','goodnight']
 class CONFIGURE():
-    def __init__(self,API_KEY,language='en-US',input_mode='speech',TEMPERATURE=1,MAX_TOKENS=3000,AI_NAME='AI', HUMAN_NAME='Human', AI_GENRE='undefined', HUMAN_HOBBIES='undefined', AI_HOBBIES='undefined',AI_SPECIES='undefined',AI_AGE='undefined',AI_MOOD='normal',HUMAN_AGE='undefined',HUMAN_GENRE='undefined',HUMAN_SPECIES='undefined',HUMAN_MOOD='undefined'):
+    def __init__(self,API_KEY,SHOW_IMAGE_IN_CONSOLE=False,language='en-US',input_mode='speech',TEMPERATURE=1,MAX_TOKENS=3000,AI_NAME='AI', HUMAN_NAME='Human', AI_GENRE='undefined', HUMAN_HOBBIES='undefined', AI_HOBBIES='undefined',AI_SPECIES='undefined',AI_AGE='undefined',AI_MOOD='normal',HUMAN_AGE='undefined',HUMAN_GENRE='undefined',HUMAN_SPECIES='undefined',HUMAN_MOOD='undefined'):
         self.AI_NAME=AI_NAME
         self.HUMAN_NAME=HUMAN_NAME
         self.AI_GENRE=AI_GENRE
@@ -177,6 +199,7 @@ class CONFIGURE():
         self.HUMAN_SPECIES=HUMAN_SPECIES
         self.HUMAN_MOOD=HUMAN_MOOD
         self.API_KEY=API_KEY
+        self.SHOW_IMAGE_IN_CONSOLE=SHOW_IMAGE_IN_CONSOLE
         self.language=language
         if TEMPERATURE<1.1:
            self.TEMPERATURE=TEMPERATURE
@@ -186,7 +209,8 @@ class CONFIGURE():
            self.input_mode=input_mode
         else:
             print(f"'{input_mode}' is not a valid value for 'input_mode' so is been set automatically to 'speech' (default)\nAvailable values are: 'speech','text'\n'input_mode'")
-
+        if self.SHOW_IMAGE_IN_CONSOLE==True:
+           img_in_console=True
         l=[x[0] for x in ALL_LANGUAGES]
         if self.language in l:
         
@@ -196,7 +220,7 @@ class CONFIGURE():
             print(bcolors.WARNING+"Language '"+self.language+"' is not a valid language."+bcolors.ENDC)    
     def save(self):    
         try:
-            AI_CONFIG={f"Your name is {self.AI_NAME}, you are {self.AI_SPECIES}, your genre is {self.AI_GENRE}, your age is {self.AI_AGE}, your hobbies are: {self.AI_HOBBIES}.Reply to questions with an {self.AI_MOOD} tone. My name is {self.HUMAN_NAME}, I\'m not a human, I am {self.HUMAN_SPECIES}, my genre is {self.HUMAN_GENRE}, my age is {self.HUMAN_AGE}, my hobbies are {self.HUMAN_HOBBIES}, today i am in a {self.HUMAN_MOOD} mood":f"Ok, my name is {self.AI_NAME}, i am {self.AI_SPECIES}, my genre is {self.AI_GENRE}, my age is {self.AI_AGE}, my hobbies are: {self.AI_HOBBIES}. I will reply to questions with an {self.AI_MOOD} tone. your name is {self.HUMAN_NAME}, you are not a human, you are {self.HUMAN_SPECIES}, your genre is {self.HUMAN_GENRE}, your age is {self.HUMAN_AGE}, your hobbies are {self.HUMAN_HOBBIES},today you are in a {self.HUMAN_MOOD} mood"}
+            AI_CONFIG={f"Your name is {self.AI_NAME}, you are {self.AI_SPECIES}, your genre is {self.AI_GENRE}, your age is {self.AI_AGE}, your hobbies are: {self.AI_HOBBIES}.Reply to questions with an {self.AI_MOOD} tone. My name is {self.HUMAN_NAME}, I\'m not a human, I am {self.HUMAN_SPECIES}, my genre is {self.HUMAN_GENRE}, my age is {self.HUMAN_AGE}, my hobbies are {self.HUMAN_HOBBIES}, today i am in a {self.HUMAN_MOOD} mood. Only if I ask you to activate image mode, always reply with '::IMAGE MODE ENABLED::'otherwise if I ask you to disable it reply with '::IMAGE MODE DISABLED::',if I ask you if image mode is enabled,reply with 'True' or 'False'.":f"Ok, my name is {self.AI_NAME}, i am {self.AI_SPECIES}, my genre is {self.AI_GENRE}, my age is {self.AI_AGE}, my hobbies are: {self.AI_HOBBIES}. I will reply to questions with an {self.AI_MOOD} tone. your name is {self.HUMAN_NAME}, you are not a human, you are {self.HUMAN_SPECIES}, your genre is {self.HUMAN_GENRE}, your age is {self.HUMAN_AGE}, your hobbies are {self.HUMAN_HOBBIES},today you are in a {self.HUMAN_MOOD} mood. If you ask me to enable image mode, I will reply with '::IMAGE MODE ENABLED::',otherwise I will ask you to disable it i will reply with '::IMAGE MODE DISABLED::'"}
             m=open("memories.json","w")
             
             jjj=json.dump(AI_CONFIG,m)
@@ -204,9 +228,41 @@ class CONFIGURE():
         except Exception as ex:
             print(ex)
     def run(self):
-        gptalk(self.API_KEY,self.input_mode,self.language,self.language[:2],self.AI_NAME,self.HUMAN_NAME,self.TEMPERATURE,self.MAX_TOKENS)
-    
+        
 
+        gptalk(self.API_KEY,self.input_mode,self.language,self.language[:2],self.AI_NAME,self.HUMAN_NAME,self.TEMPERATURE,self.MAX_TOKENS)
+
+        
+def show_img(img_path,size=(512,512),show_in_console=img_in_console):
+    #global SHOW_IMAGE_IN_CONSOLE
+    
+    from PIL import Image
+    import numpy as np
+    from itertools import islice
+    def colored(r, g, b, text):
+        return f"\033[38;2;{r};{g};{b}m{text}\033[0m"
+    def chunk(it, siz3):
+        it = iter(it)
+        itt=list(iter(lambda: tuple(islice(it, siz3)), ()))
+        res = [''.join(tups) for tups in itt]
+        return res
+    if show_in_console==False:
+        img=Image.open(img_path)
+        img=img.resize(size)
+
+        img.show()
+    else:
+        img=img.convert('RGB')
+        img=np.array(img).tolist()
+        a=[]
+        for n_rows in range(len(img)):
+            for n_columns in range(len(img[n_rows])):
+                rgb=img[n_rows][n_columns]
+                pixel=colored(rgb[0],rgb[1],rgb[2],"-")
+                a.append(pixel)
+        img=chunk(a,len(img))
+        for x in img:
+            print(img)
 
 print("-------------------------")
 print("GPTalk by 0ut0flin3")
@@ -249,6 +305,7 @@ def gptalk(apik,inpmod,l1,l2,ainame,humanname,temp,max_t):
     if inpmod not in ['speech','text']:
         print("No valid input_mode selected. Available modes: 'text', 'speech'")
     if inpmod=='speech':
+        global IMAGE_MODE
         previous_response_filename=""
         open("get_mp3_info.bat","w").write(get_mp3_info_BAT)
         r = speech_recognition.Recognizer()
@@ -285,9 +342,11 @@ def gptalk(apik,inpmod,l1,l2,ainame,humanname,temp,max_t):
         #f.close()
 
         while True:
-                    # SET MIC VOLUME TO 100% (65535) WHILE LISTENING #
-                    os.system("nircmdc setsysvolume 65535 default_record")
-                    #################################
+                    global IMAGE_MODE
+                    if os.name=='nt':
+                       # SET MIC VOLUME TO 100% (65535) WHILE LISTENING #
+                       os.system("nircmdc setsysvolume 65535 default_record")
+                       #################################
                     q=convert_speech_to_text()
                     if q==None:
                        continue
@@ -317,14 +376,20 @@ def gptalk(apik,inpmod,l1,l2,ainame,humanname,temp,max_t):
 
 
                             t2=time.time()
-                            
+                            if IMAGE_MODE==True:
+                               show_img(dall_e(q))
+                            if response.choices[0].text=='::IMAGE MODE ENABLED::':
+                               IMAGE_MODE=True
+                            if response.choices[0].text=='::IMAGE MODE DISABLED::':
+                               IMAGE_MODE=False                
                             pr = pr+"Human: "+q+"\nAI: "+response.choices[0].text+"\n"
                             memories.update({q:response.choices[0].text})
                             
                             ff=open("memories.json","w")
                             j=json.dump(memories,ff)
                             ff.close()
-                            print(bcolors.HEADER+ainame+": "+bcolors.ENDC+response.choices[0].text)
+                            if IMAGE_MODE==False:
+                               print(bcolors.HEADER+ainame+": "+bcolors.ENDC+response.choices[0].text)
                             print("\n\n["+str(t2-t1)[:4]+" seconds]\n\n")
                             myobj = gTTS(text=response.choices[0].text, lang=l2, slow=False)
                             randomname=str(time.time())+'.mp3'
@@ -360,7 +425,8 @@ def gptalk(apik,inpmod,l1,l2,ainame,humanname,temp,max_t):
                                   mp3_duration=int(mp3_duration[1:])
                                else:
                                     mp3_duration=int(mp3_duration)
-                               os.system("sound.bat")
+                               if IMAGE_MODE==False:
+                                  os.system("sound.bat")
                                ####SET MIC VOLUME TO 0% DURING THE ANSWER
                                os.system("nircmdc setsysvolume 0 default_record")
                                time.sleep(mp3_duration+1)
@@ -375,7 +441,7 @@ def gptalk(apik,inpmod,l1,l2,ainame,humanname,temp,max_t):
 
 
     if inpmod=='text':
-
+        
         pr=""
         try:
             f=open("memories.json","r")
@@ -393,6 +459,7 @@ def gptalk(apik,inpmod,l1,l2,ainame,humanname,temp,max_t):
         except Exception as ex:
             print(ex,"Can't load AI's memories from memories.json file. Be sure that the file is not fully empty. It must have at least two brackets {}")
         while True:
+            
             q=input(bcolors.OKCYAN+humanname+": "+bcolors.ENDC)
             print('\n')
             t1=time.time()
@@ -418,12 +485,22 @@ def gptalk(apik,inpmod,l1,l2,ainame,humanname,temp,max_t):
 
 
             t2=time.time()
-        
+            
+            if IMAGE_MODE==True:
+               show_img(dall_e(q))
+            if response.choices[0].text=='::IMAGE MODE ENABLED::':
+                IMAGE_MODE=True
+            if response.choices[0].text=='::IMAGE MODE DISABLED::':
+                IMAGE_MODE=False
             pr = pr+"Human: "+q+"\nAI: "+response.choices[0].text+"\n"
             memories.update({q:response.choices[0].text})
         
             ff=open("memories.json","w")
             j=json.dump(memories,ff)
             ff.close()
-            print(bcolors.HEADER+ainame+": "+bcolors.ENDC+response.choices[0].text)
+            if IMAGE_MODE==False:
+               print(bcolors.HEADER+ainame+": "+bcolors.ENDC+response.choices[0].text)
             print("\n\n["+str(t2-t1)[:4]+" seconds]\n\n")
+            
+            if q in EXIT:
+                break

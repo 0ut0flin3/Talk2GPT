@@ -1,6 +1,11 @@
-# GPTalk 0.0.4.2 (text + speech)
+# GPTalk 0.0.4.3 (text + speech)
 
 Fast GPT-3 client for Windows and Unix that supports both text and speech in any language.
+
+
+**Here is a video tutorial if you have troubles using Python or GPTalk: https://www.youtube.com/watch?v=jXBpMUv5QB0&t=320s**
+
+**Jan 24,2023: Integrated DALL-E support - Instant generation and preview of images using both text and speech**
 
 
 <img src="https://user-images.githubusercontent.com/114559605/213072836-213cd555-68fc-496a-8613-23c8dcf4c06c.png" height="250" width="250">
@@ -45,7 +50,7 @@ on mac: `brew install swig pulseaudio` ..... then : `sudo pip install pocketsphi
 
 ## INSTALLATION 
 
-Install GPTalk using PIP: `pip install  gptalk==0.0.4.2`
+Install GPTalk using PIP: `pip install  gptalk==0.0.4.3`
 
 
 Upgrade gptalk from time to time with pip install -U so that you always use the updated and bugfixed version.
@@ -99,7 +104,15 @@ If you want change speech language (en-US is default) use `app.language=<LANGUAG
 
 Give a feedback, positive or negative,it's very apprecciated >> https://discord.gg/mettNtATzW
 
+## Generate images
 
+DALL-E image generation is now active using both voice and text.
+
+To activate image mode ask gpt-3 to activate it. It will be active immediately. From that moment the inputs will generate an image that will be immediately displayed in a pop-up.
+
+To exit image mode, tell gpt-3 to disable it and you'll be back to normal use.
+
+You can also choose to display the images directly in the terminal in RGB color format but you will need to set this option before, in the configuration phase, using `app.SHOW_IMAGE_IN_CONSOLE=True`.
 
 ## LANGUAGES
 
@@ -289,4 +302,5 @@ Polygon / MYST : `0x45320b5B2a8f6073f4a92FFDF149861aBade4B4b`
 
 
 Thank you :-)
+
 
