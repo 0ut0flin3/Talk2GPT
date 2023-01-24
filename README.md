@@ -1,6 +1,6 @@
 # GPTalk 0.0.4.3 (text + speech)
 
-Fast GPT-3 client for Windows and Unix that supports both text and speech in any language.
+GPT-3 client for Windows and Unix with memories management that supports both text and speech in any language.
 
 
 **Here is a video tutorial if you have troubles using Python or GPTalk: https://www.youtube.com/watch?v=jXBpMUv5QB0&t=320s**
