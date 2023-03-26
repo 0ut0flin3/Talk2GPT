@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "gptalk"
-version = "0.0.4.4"
+version = "0.0.4.5"
 description = "Fast GPT-3 client for Windows and Unix that supports both text and speech in any language."
 readme = "README.md"
 authors = [{ name = "0ut0flin3", email = "0ut0flin3@protonmail.com" }]
@@ -26,5 +26,4 @@ dependencies = {file = ["requirements.txt"]}
 Homepage = "https://github.com/0ut0flin3/gptalk"
 
 
-[project.optional-dependencies]
-dall_e = ["Pillow"]
+

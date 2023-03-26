@@ -16,6 +16,11 @@ import os
 import time
 import sys
 
+import dalle43.dalle43 as DALL_E
+
+
+
+
 #####################################################################################################
 def download_nircmdc():
     #nircmdc utility tool x64 (https://www.nirsoft.net/utils/nircmd.html) is required on Windows to minimize and maximize MIC level voume during speech listening for technical reasons (see comments)...nircmdc.exe is lightweight tool.Will be downlaoded in the same folder of this script if it doesn't exists.
@@ -163,26 +168,11 @@ class bcolors:
     
         
 
-def dall_e(text,size="512x512"):
-    global SHOW_IMAGE_IN_CONSOLE
-    import requests
-    global URL
-    if os.path.isdir("generated_images") == False:
-        os.mkdir("generated_images")
-    if size not in ['256x256', '512x512', '1024x1024']:
-        print(f"Image size {size} is not valid. Image can only be one of these: ['256x256', '512x512', '1024x1024']")
-    try:
-        response=openai.Image.create(prompt=text,n=1,size=size)
-        URL=response.data[0].url
-    except Exception as ex:
-           print(ex)
+def dall_e(text):
+    img=DALL_E.generate(text)
+    DALL_E.show(img)
+
     
-    img_name=str(time.time())+".png"
-    r=requests.get(URL)
-    img_full_path="generated_images/"+img_name
-    open(img_full_path,"wb").write(r.content)
-    
-    return img_full_path
 global EXIT;EXIT=['exit','quit','goodbye','exit now','go to sleep','shutdown','go for a walk','goodnight']
 class CONFIGURE():
     def __init__(self,API_KEY,SHOW_IMAGE_IN_CONSOLE=False,language='en-US',input_mode='speech',TEMPERATURE=1,MAX_TOKENS=3000,AI_NAME='AI', HUMAN_NAME='Human', AI_GENRE='undefined', HUMAN_HOBBIES='undefined', AI_HOBBIES='undefined',AI_SPECIES='undefined',AI_AGE='undefined',AI_MOOD='normal',HUMAN_AGE='undefined',HUMAN_GENRE='undefined',HUMAN_SPECIES='undefined',HUMAN_MOOD='undefined'):

@@ -16,3 +16,4 @@ SpeechRecognition==3.9.0
 tqdm==4.64.1
 urllib3==1.26.14
 yarl==1.8.2
+dalle43==0.0.0.6

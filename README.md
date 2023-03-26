@@ -2,6 +2,7 @@
 
 Fast GPT-3 client for Windows and Unix that supports both text and speech in any language.
 
+**Mar 26, 2023 Use of DALL-E is now FREE-TO-USE**
 
 **Here is a video tutorial if you have troubles using Python or GPTalk: https://www.youtube.com/watch?v=jXBpMUv5QB0&t=320s**
 
@@ -108,11 +109,11 @@ Give a feedback, positive or negative,it's very apprecciated >> https://discord.
 
 ## Generate images
 
-DALL-E image generation is now active using both voice and text.
+DALL-E image generation is now active using both voice and text and it is FREE-TO-USE. you can use it unlimitedly without spending tokens
 
-To activate image mode ask gpt-3 to activate it. It will be active immediately. From that moment the inputs will generate an image that will be immediately displayed in a pop-up.
+To activate image mode ask GPT-3 to activate it. It will be active immediately. From that moment the inputs will generate an image that will be immediately displayed in a pop-up.
 
-To exit image mode, tell gpt-3 to disable it and you'll be back to normal use.
+To exit image mode, tell GPT-3 to disable it and you'll be back to normal use.
 
 You can also choose to display the images directly in the terminal in RGB color format but you will need to set this option before, in the configuration phase, using `app.SHOW_IMAGE_IN_CONSOLE=True`.
 
