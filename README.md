@@ -64,35 +64,38 @@ Upgrade gptalk from time to time with pip install -U so that you always use the 
 In addition to interact with GPT-3 using the text or speech, it is also possible to define some aspects of its behavior and personal details, as well as yours.
 
 BASIC USAGE EXAMPLE:
+```python
+import gptalk.gptalk as gpt3
 
-***>>>***`import gptalk.gptalk as gpt3`
+app = gpt3.CONFIGURE(<YOUR_API_KEY>)  # OR: app = gpt3.CONFIGURE(os.getenv('OPENAI_API_KEY'))
 
-***>>>***`app = gpt3.CONFIGURE(<YOUR_API_KEY>)`  # OR: app = gpt3.CONFIGURE(os.getenv('OPENAI_API_KEY'))
+app.language=<LANGUAGE_TICKER> # only needed for speech mode really, because text mode automatically will translate if you start chatting in a specific lang
 
-***>>>***`app.language=<LANGUAGE_TICKER>` # only needed for speech mode really, because text mode automatically will translate if you start chatting in a specific lang
+app.input_mode = "speech" # OR 'text'
 
-***>>>***`app.input_mode = "speech"` # OR 'text'
+app.AI_NAME = "Alice"
 
-***>>>***`app.AI_NAME = "Alice"`
+app.HUMAN_NAME = "Bob"
 
-***>>>***`app.HUMAN_NAME = "Bob"`
+app.AI_GENRE = "female"
 
-***>>>***`app.AI_GENRE = "female"`
+app.AI_AGE = "32"
 
-***>>>***`app.AI_AGE = "32"`
+app.AI_MOOD = "happy"
 
-***>>>***`app.AI_MOOD = "happy"`
-
-***>>>***`app.AI_SPECIES = "human"`
-
+app.AI_SPECIES = "human"
+```
 then, save:
 
-
-***>>>***`app.save() #will create a memories.json file in the same folder that will store the informations you set in the previous step. will also store and remember conversations with gpt3.Every time you run save(),already existent memories.json will be replaced with new. You can just run directly run() in the next step to use already existent. Don't matter if you do directly run() without save() ,in that case no memories will be used. You can also create your own empty memories.json that must contains at least two brackets {} , (must NOT be fully empty)`
+```python
+app.save() #will create a memories.json file in the same folder that will store the informations you set in the previous step. will also store and remember conversations with gpt3.Every time you run save(),already existent memories.json will be replaced with new. You can just run directly run() in the next step to use already existent. Don't matter if you do directly run() without save() ,in that case no memories will be used. You can also create your own empty memories.json that must contains at least two brackets {} , (must NOT be fully empty)
+```
 
 and,then, run the app:
 
-***>>>***`app.run()`
+```python
+app.run()
+```
 
 Start talking ( or typing, depending by the mode you choose) ... As for 'speech mode', gpt-3  should respond in seconds, but several factors can influence (try more times if you fail, move closer to the microphone)
 
@@ -111,11 +114,10 @@ Give a feedback, positive or negative,it's very apprecciated >> https://discord.
 
 DALL-E image generation is now active using both voice and text and it is FREE-TO-USE. you can use it unlimitedly without spending tokens
 
-To activate image mode ask GPT-3 to activate it. It will be active immediately. From that moment the inputs will generate an image that will be immediately displayed in a pop-up.
+To activate image mode ask GPT-3 to activate it, e.g. `please, activate image mode` , it will be active immediately. From that moment the inputs will generate an image that will be immediately displayed in a pop-up.
 
 To exit image mode, tell GPT-3 to disable it and you'll be back to normal use.
 
-You can also choose to display the images directly in the terminal in RGB color format but you will need to set this option before, in the configuration phase, using `app.SHOW_IMAGE_IN_CONSOLE=True`.
 
 ## LANGUAGES
 
