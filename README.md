@@ -1,4 +1,4 @@
-# GPTalk 0.0.4.4 (text + speech)
+# GPTalk 0.0.4.5 (text + speech)
 
 Fast GPT-3 client for Windows and Unix that supports both text and speech in any language.
 
@@ -51,10 +51,7 @@ on mac: `brew install swig pulseaudio` ..... then : `sudo pip install pocketsphi
 
 ## INSTALLATION 
 
-Install GPTalk using PIP: `pip install  gptalk==0.0.4.4`
-
-or `pip install gptalk[dall_e]==0.0.4.4` for using DALL-E too
-
+Install GPTalk using PIP: `pip install  gptalk==0.0.4.5`
 
 Upgrade gptalk from time to time with pip install -U so that you always use the updated and bugfixed version.
 
